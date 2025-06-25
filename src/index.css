@@ -1,0 +1,241 @@
+@import "tailwindcss";
+
+:root {
+  /* Text colors */
+  --text-black: #232323;
+  --text-darkgray: #94968c;
+  --text-mediumgray: #d1d2cc;
+  --text-lightgray: #ececec;
+  --text-white: #efefef;
+
+  /* Backgrounds if needed */
+  --bg-black: #232323;
+  --bg-white: #efefef;
+  --bg-lightgray: #ececec;
+  --bg-gray30: rgba(209, 210, 204, 0.4);
+}
+
+body {
+  background-color: var(--bg-white);
+}
+
+.text-black {
+  color: var(--text-black);
+}
+.text-darkgray {
+  color: var(--text-darkgray);
+}
+.text-mediumgray {
+  color: var(--text-mediumgray);
+}
+
+.bg-white {
+  color: var(--bg-white);
+}
+.bg-gray30 {
+  background-color: var(--bg-gray30);
+}
+
+@layer components {
+  .text-h4 {
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+    font-weight: 500;
+    font-family: "General Sans", sans-serif;
+
+    @media (min-width: 768px) {
+      font-size: 2rem;
+      line-height: 2.6rem;
+    }
+  }
+
+  .text-h5 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 500;
+    font-family: "General Sans", sans-serif;
+
+    @media (min-width: 768px) {
+      font-size: 1.5rem;
+      line-height: 2.1rem;
+    }
+  }
+
+  .text-h6 {
+    font-size: 1.125rem;
+    line-height: 1.575rem;
+    font-weight: 500;
+    font-family: "General Sans", sans-serif;
+
+    @media (min-width: 768px) {
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+    }
+  }
+
+  .text-lg-rg-normal {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    font-family: "General Sans", sans-serif;
+
+    @media (min-width: 768px) {
+      font-size: 1.25rem;
+      line-height: 1.875rem;
+    }
+  }
+
+  .text-rg-sm-normal {
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+    font-weight: 400;
+    font-family: "General Sans", sans-serif;
+
+    @media (min-width: 768px) {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+  }
+
+  .text-rg-sm-medium {
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+    font-weight: 500;
+    font-family: "General Sans", sans-serif;
+
+    @media (min-width: 768px) {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+  }
+
+  .text-grad {
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+    font-weight: 400;
+    font-family: "General Sans", sans-serif;
+
+    @media (min-width: 768px) {
+      font-weight: 500;
+    }
+  }
+
+  .text-rg-sm-italic {
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+    font-weight: 400;
+    font-style: italic;
+    font-family: "General Sans", sans-serif;
+
+    @media (min-width: 768px) {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+  }
+}
+
+/* =========================
+   Typography: Headings
+   ========================= */
+.heading-h4 {
+  font-size: 2rem;
+  line-height: 2.6rem;
+  font-weight: 500;
+  font-family: "General Sans", sans-serif;
+}
+
+.heading-h4-mb {
+  font-size: 1.5rem;
+  line-height: 2.1rem;
+  font-weight: 500;
+  font-family: "General Sans", sans-serif;
+}
+
+.heading-h5 {
+  font-size: 1.5rem;
+  line-height: 2.1rem;
+  font-weight: 500;
+  font-family: "General Sans", sans-serif;
+}
+
+.heading-h5-mb {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  font-family: "General Sans", sans-serif;
+}
+
+.heading-h6 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  font-family: "General Sans", sans-serif;
+}
+
+.heading-h6-mb {
+  font-size: 1.125rem;
+  line-height: 1.575rem;
+  font-weight: 500;
+  font-family: "General Sans", sans-serif;
+}
+
+/* =========================
+     Typography: Text Styles
+     ========================= */
+.text-lg-normal {
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  font-weight: 400;
+  font-family: "General Sans", sans-serif;
+}
+
+.text-base-normal {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  font-family: "General Sans", sans-serif;
+}
+
+.text-base-medium {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  font-family: "General Sans", sans-serif;
+}
+
+.text-base-italic {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-style: italic;
+  font-weight: 400;
+  font-family: "General Sans", sans-serif;
+}
+
+.text-sm-normal {
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+  font-weight: 400;
+  font-family: "General Sans", sans-serif;
+}
+
+.text-sm-medium {
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+  font-weight: 500;
+  font-family: "General Sans", sans-serif;
+}
+
+.text-sm-italic {
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+  font-style: italic;
+  font-weight: 400;
+  font-family: "General Sans", sans-serif;
+}
+
+.text-tiny-normal {
+  font-size: 0.75rem;
+  line-height: 150%; /* 1.125rem */
+  font-weight: 400;
+  font-family: "General Sans", sans-serif;
+}
