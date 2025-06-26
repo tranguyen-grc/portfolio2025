@@ -15,10 +15,24 @@ import javascriptIcon from "../assets/javascriptIcon.svg";
 import PsIcon from "../assets/PsIcon.svg";
 import pythonIcon from "../assets/pythonIcon.svg";
 import reactIcon from "../assets/reactIcon.svg";
-
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import ToTopButton from "../components/ToTopButton";
 
 export default function About() {
+  useEffect(() => {
+    document.title = "Tra Nguyen | About";
+  }, []);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 100,
+    });
+  }, []);
   return (
     <main className="px-6 sm:px-10 lg:px-[12.625rem]">
       <Navbar />
@@ -31,7 +45,10 @@ export default function About() {
         "
       >
         {/* Image Block with Gradient Overlay (comes first on mobile) */}
-        <div className="order-1 md:order-2 w-full md:w-[25rem] flex-shrink-0 relative rounded-[2rem] overflow-hidden shadow-md">
+        <div
+          className="order-1 md:order-2 w-full md:w-[25rem] flex-shrink-0 relative rounded-[2rem] overflow-hidden shadow-md"
+          data-aos="fade-left"
+        >
           <img
             src={Headshot}
             alt="Tra Nguyen"
@@ -47,7 +64,10 @@ export default function About() {
         </div>
 
         {/* Text Block (comes second on mobile, left on desktop) */}
-        <div className="order-2 md:order-1 w-full md:w-[45rem] text-left">
+        <div
+          className="order-2 md:order-1 w-full md:w-[45rem] text-left"
+          data-aos="fade-right"
+        >
           <h1 className="text-h4 text-black mb-4">Hi, I'm Tra Nguyen.</h1>
           <p className="text-rg-sm-normal text-black mb-4">
             I first got into UI/UX design by obsessing over game menus as a
@@ -81,222 +101,228 @@ export default function About() {
       </section>
 
       {/* Education Section */}
-      <section className="py-[5rem]">
-        <h2 className="text-h4 mb-8 text-black">Education</h2>
-        <div className="flex flex-col gap-10">
-          {/* University */}
-          <div className="flex flex-col md:flex-row md:gap-[10rem] items-start">
-            {/* Details first on mobile */}
-            <div className="order-1 md:order-2 flex-1">
-              <p className="text-rg-sm-medium text-black">
-                California Polytechnic State University, San Luis Obispo
-              </p>
-              <p className="text-rg-sm-normal text-darkgray">
-                B.S. in Liberal Arts and Engineering Studies: Computer Science &
-                UI/UX
-                <br />
-                GPA: 3.8
-              </p>
+      <div data-aos="fade-up" data-aos-delay="100">
+        <section className="py-[5rem]">
+          <h2 className="text-h4 mb-8 text-black">Education</h2>
+          <div className="flex flex-col gap-10">
+            {/* University */}
+            <div className="flex flex-col md:flex-row md:gap-[10rem] items-start">
+              {/* Details first on mobile */}
+              <div className="order-1 md:order-2 flex-1">
+                <p className="text-rg-sm-medium text-black">
+                  California Polytechnic State University, San Luis Obispo
+                </p>
+                <p className="text-rg-sm-normal text-darkgray">
+                  B.S. in Liberal Arts and Engineering Studies: Computer Science
+                  & UI/UX
+                  <br />
+                  GPA: 3.8
+                </p>
+              </div>
+              {/* Date second on mobile */}
+              <div className="order-2 md:order-1 min-w-[8rem] text-grad text-darkgray">
+                <p>Expected Graduation</p>
+                <p>June 2027</p>
+              </div>
             </div>
-            {/* Date second on mobile */}
-            <div className="order-2 md:order-1 min-w-[8rem] text-grad text-darkgray">
-              <p>Expected Graduation</p>
-              <p>June 2027</p>
-            </div>
-          </div>
 
-          {/* High School */}
-          <div className="flex flex-col md:flex-row md:gap-[10rem] items-start">
-            {/* Details first on mobile */}
-            <div className="order-1 md:order-2 flex-1">
-              <p className="text-rg-sm-medium text-black">
-                Henry M. Gunn High School
-              </p>
-              <p className="text-rg-sm-normal text-darkgray">
-                Weighted GPA: 4.3
-              </p>
-            </div>
-            {/* Dates second on mobile */}
-            <div className="order-2 md:order-1 min-w-[8rem] text-grad text-darkgray">
-              <p>Aug 2019 — June 2023</p>
+            {/* High School */}
+            <div className="flex flex-col md:flex-row md:gap-[10rem] items-start">
+              {/* Details first on mobile */}
+              <div className="order-1 md:order-2 flex-1">
+                <p className="text-rg-sm-medium text-black">
+                  Henry M. Gunn High School
+                </p>
+                <p className="text-rg-sm-normal text-darkgray">
+                  Weighted GPA: 4.3
+                </p>
+              </div>
+              {/* Dates second on mobile */}
+              <div className="order-2 md:order-1 min-w-[8rem] text-grad text-darkgray">
+                <p>Aug 2019 — June 2023</p>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
       {/* Experience Section */}
-      <section className="py-[5rem]">
-        <h2 className="text-h4 mb-8 text-black">Experience</h2>
-        <div className="flex flex-col gap-10">
-          {/* Stanford */}
-          <div className="flex flex-col md:flex-row md:gap-[10rem] items-start">
-            {/* Dates */}
-            <div className="min-w-[8rem] text-grad text-darkgray text-sm-medium">
-              <p>June 2024 — June 2025</p>
+      <div data-aos="fade-up" data-aos-delay="200">
+        <section className="py-[5rem]">
+          <h2 className="text-h4 mb-8 text-black">Experience</h2>
+          <div className="flex flex-col gap-10">
+            {/* Stanford */}
+            <div className="flex flex-col md:flex-row md:gap-[10rem] items-start">
+              {/* Dates */}
+              <div className="min-w-[8rem] text-grad text-darkgray text-sm-medium">
+                <p>June 2024 — June 2025</p>
+              </div>
+              <div>
+                <p className="text-rg-sm-medium text-black">
+                  Graphic Design Intern{" "}
+                  <span className="text-rg-sm-italic">
+                    @ Asian Liver Center at Stanford University
+                  </span>
+                </p>
+                <ul className="list-disc text-rg-sm-normal text-darkgray pl-5 mt-2 space-y-1">
+                  <li>
+                    Collaborated with stakeholders to align ad designs with
+                    marketing objectives and audience expectations for the
+                    Summer and Academic Year internship terms
+                  </li>
+                  <li>
+                    Led the design and prototyping of an AI chat website
+                    specific to HepB and liver cancer
+                  </li>
+                  <li>
+                    Created engaging graphics and animations for social media to
+                    promote events
+                  </li>
+                  <li>Managed and maintained the HepB Moms website</li>
+                </ul>
+              </div>
             </div>
-            <div>
-              <p className="text-rg-sm-medium text-black">
-                Graphic Design Intern{" "}
-                <span className="text-rg-sm-italic">
-                  @ Asian Liver Center at Stanford University
-                </span>
-              </p>
-              <ul className="list-disc text-rg-sm-normal text-darkgray pl-5 mt-2 space-y-1">
-                <li>
-                  Collaborated with stakeholders to align ad designs with
-                  marketing objectives and audience expectations for the Summer
-                  and Academic Year internship terms
-                </li>
-                <li>
-                  Led the design and prototyping of an AI chat website specific
-                  to HepB and liver cancer
-                </li>
-                <li>
-                  Created engaging graphics and animations for social media to
-                  promote events
-                </li>
-                <li>Managed and maintained the HepB Moms website</li>
-              </ul>
-            </div>
-          </div>
 
-          {/* ASPEN */}
-          <div className="flex flex-col md:flex-row md:gap-[10rem] items-start">
-            {/* Dates */}
-            <div className="min-w-[8rem] text-grad text-darkgray text-sm-medium">
-              <p>Aug 2024 — Present</p>
+            {/* ASPEN */}
+            <div className="flex flex-col md:flex-row md:gap-[10rem] items-start">
+              {/* Dates */}
+              <div className="min-w-[8rem] text-grad text-darkgray text-sm-medium">
+                <p>Aug 2024 — Present</p>
+              </div>
+              <div>
+                <p className="text-rg-sm-medium text-black">
+                  Graphic Designer + Web Project Coordinator{" "}
+                  <span className="text-rg-sm-italic">
+                    @ Advanced Systems for Power Engineering, Inc.
+                  </span>
+                </p>
+                <ul className="list-disc text-rg-sm-normal text-darkgray pl-5 mt-2 space-y-1">
+                  <li>
+                    Collaborated with ASPEN executives and a web developer to
+                    redesign the company website, ensuring a user-friendly
+                    experience for both new and returning clients
+                  </li>
+                  <li>
+                    Proposed optimized layouts and user flows to enhance
+                    navigation and improve overall usability
+                  </li>
+                  <li>
+                    Designed visually appealing website graphics using Adobe
+                    Illustrator and Adobe Photoshop to align with ASPEN's
+                    branding
+                  </li>
+                  <li>
+                    Designed advertisements for engineering magazines, including
+                    T&D World and IEEE Power & Energy, showcasing ASPEN's
+                    engineering software products such as OneLiner and PowerFlow
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div>
-              <p className="text-rg-sm-medium text-black">
-                Graphic Designer + Web Project Coordinator{" "}
-                <span className="text-rg-sm-italic">
-                  @ Advanced Systems for Power Engineering, Inc.
-                </span>
-              </p>
-              <ul className="list-disc text-rg-sm-normal text-darkgray pl-5 mt-2 space-y-1">
-                <li>
-                  Collaborated with ASPEN executives and a web developer to
-                  redesign the company website, ensuring a user-friendly
-                  experience for both new and returning clients
-                </li>
-                <li>
-                  Proposed optimized layouts and user flows to enhance
-                  navigation and improve overall usability
-                </li>
-                <li>
-                  Designed visually appealing website graphics using Adobe
-                  Illustrator and Adobe Photoshop to align with ASPEN's branding
-                </li>
-                <li>
-                  Designed advertisements for engineering magazines, including
-                  T&D World and IEEE Power & Energy, showcasing ASPEN's
-                  engineering software products such as OneLiner and PowerFlow
-                </li>
-              </ul>
-            </div>
-          </div>
 
-          {/* H4I */}
-          <div className="flex flex-col md:flex-row md:gap-[10rem] items-start">
-            {/* Dates */}
-            <div className="min-w-[8rem] text-grad text-darkgray text-sm-medium">
-              <p>Oct 2024 — Present</p>
+            {/* H4I */}
+            <div className="flex flex-col md:flex-row md:gap-[10rem] items-start">
+              {/* Dates */}
+              <div className="min-w-[8rem] text-grad text-darkgray text-sm-medium">
+                <p>Oct 2024 — Present</p>
+              </div>
+              <div>
+                <p className="text-rg-sm-medium text-black">
+                  UI/UX Designer{" "}
+                  <span className="text-rg-sm-italic">@ Hack4Impact</span>
+                </p>
+                <ul className="list-disc text-rg-sm-normal text-darkgray pl-5 mt-2 space-y-1">
+                  <li>
+                    Designed a responsive website for the Central Coast Heritage
+                    Tree Foundation, featuring distinct admin and volunteer
+                    interfaces
+                  </li>
+                  <li>
+                    Created dashboards and data tables to log and manage tree
+                    and user information effectively
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div>
-              <p className="text-rg-sm-medium text-black">
-                UI/UX Designer{" "}
-                <span className="text-rg-sm-italic">@ Hack4Impact</span>
-              </p>
-              <ul className="list-disc text-rg-sm-normal text-darkgray pl-5 mt-2 space-y-1">
-                <li>
-                  Designed a responsive website for the Central Coast Heritage
-                  Tree Foundation, featuring distinct admin and volunteer
-                  interfaces
-                </li>
-                <li>
-                  Created dashboards and data tables to log and manage tree and
-                  user information effectively
-                </li>
-              </ul>
-            </div>
-          </div>
 
-          {/* iter8 */}
-          <div className="flex flex-col md:flex-row md:gap-[10rem] items-start">
-            {/* Dates */}
-            <div className="min-w-[8rem] text-grad text-darkgray text-sm-medium">
-              <p>Oct 2024 — Present</p>
-            </div>
-            <div>
-              <p className="text-rg-sm-medium text-black">
-                UI/UX Designer{" "}
-                <span className="text-rg-sm-italic">@ CalPoly Iter8</span>
-              </p>
-              <ul className="list-disc text-rg-sm-normal text-darkgray pl-5 mt-2 space-y-1">
-                <li>
-                  Conducted competitor analysis, user stories, and feature
-                  prioritization using an effort vs. impact matrix
-                </li>
-                <li>
-                  Designed a task-based messaging system modeled after
-                  Slack/Discord with servers, channels, and DMs
-                </li>
-                <li>
-                  Ran user interviews and affinity mapping to improve IA and UI
-                  in high-fidelity iterations
-                </li>
-                <li>
-                  Collaborated on A/B testing and user flows to refine early
-                  navigation and structure
-                </li>
-              </ul>
+            {/* iter8 */}
+            <div className="flex flex-col md:flex-row md:gap-[10rem] items-start">
+              {/* Dates */}
+              <div className="min-w-[8rem] text-grad text-darkgray text-sm-medium">
+                <p>Oct 2024 — Present</p>
+              </div>
+              <div>
+                <p className="text-rg-sm-medium text-black">
+                  UI/UX Designer{" "}
+                  <span className="text-rg-sm-italic">@ CalPoly Iter8</span>
+                </p>
+                <ul className="list-disc text-rg-sm-normal text-darkgray pl-5 mt-2 space-y-1">
+                  <li>
+                    Conducted competitor analysis, user stories, and feature
+                    prioritization using an effort vs. impact matrix
+                  </li>
+                  <li>
+                    Designed a task-based messaging system modeled after
+                    Slack/Discord with servers, channels, and DMs
+                  </li>
+                  <li>
+                    Ran user interviews and affinity mapping to improve IA and
+                    UI in high-fidelity iterations
+                  </li>
+                  <li>
+                    Collaborated on A/B testing and user flows to refine early
+                    navigation and structure
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
       {/* Tools and skills */}
-      <section className="py-[5rem]">
-        <h2 className="text-h4 mb-8 text-black">Tools + Skills</h2>
-        <div className="flex flex-col items-start gap-12">
-          {/* Tool Icons Grid */}
-          <div className="grid grid-cols-4 sm:grid-cols-6 gap-x-10 gap-y-14 overflow-visible">
-            {[
-              { src: figmaIcon, label: "Figma" },
-              { src: PsIcon, label: "Photoshop" },
-              { src: AiIcon, label: "Illustrator" },
-              { src: IdIcon, label: "InDesign" },
-              { src: AeIcon, label: "After Effects" },
-              { src: gitIcon, label: "Git" },
-              { src: htmlIcon, label: "HTML5" },
-              { src: cssIcon, label: "CSS3" },
-              { src: reactIcon, label: "React" },
-              { src: javascriptIcon, label: "JavaScript" },
-              { src: pythonIcon, label: "Python" },
-              { src: javaIcon, label: "Java" },
-            ].map((tool, index) => (
-              <div
-                key={index}
-                className="relative group flex flex-col items-center justify-center cursor-pointer"
-              >
-                <img
-                  src={tool.src}
-                  alt={tool.label}
-                  className="w-12 h-12 object-contain transition-transform duration-200 group-hover:scale-110"
-                />
-
-                {/* Always-visible on mobile */}
+      <div data-aos="fade-up" data-aos-delay="200">
+        <section className="py-[5rem]">
+          <h2 className="text-h4 mb-8 text-black">Tools + Skills</h2>
+          <div className="flex flex-col items-start gap-12">
+            {/* Tool Icons Grid */}
+            <div className="grid grid-cols-4 sm:grid-cols-6 gap-x-10 gap-y-14 overflow-visible">
+              {[
+                { src: figmaIcon, label: "Figma" },
+                { src: PsIcon, label: "Photoshop" },
+                { src: AiIcon, label: "Illustrator" },
+                { src: IdIcon, label: "InDesign" },
+                { src: AeIcon, label: "After Effects" },
+                { src: gitIcon, label: "Git" },
+                { src: htmlIcon, label: "HTML5" },
+                { src: cssIcon, label: "CSS3" },
+                { src: reactIcon, label: "React" },
+                { src: javascriptIcon, label: "JavaScript" },
+                { src: pythonIcon, label: "Python" },
+                { src: javaIcon, label: "Java" },
+              ].map((tool, index) => (
                 <div
-                  className="
+                  key={index}
+                  className="relative group flex flex-col items-center justify-center cursor-pointer"
+                >
+                  <img
+                    src={tool.src}
+                    alt={tool.label}
+                    className="w-12 h-12 object-contain transition-transform duration-200 group-hover:scale-110"
+                  />
+
+                  {/* Always-visible on mobile */}
+                  <div
+                    className="
     sm:hidden mt-2 text-tiny-normal text-darkgray text-center max-w-[3.7rem] truncate
   "
-                >
-                  {tool.label}
-                </div>
+                  >
+                    {tool.label}
+                  </div>
 
-                {/* Hover-animated on desktop */}
-                <div
-                  className="
+                  {/* Hover-animated on desktop */}
+                  <div
+                    className="
     absolute bottom-[-1.8rem]
     text-sm-normal text-darkgray text-center
     opacity-0 translate-y-1
@@ -305,27 +331,30 @@ export default function About() {
     w-[6rem] px-1
     hidden sm:block
   "
-                >
-                  {tool.label}
+                  >
+                    {tool.label}
+                  </div>
                 </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
 
-          {/* Skill Labels Grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-10 gap-y-4 text-rg-sm-normal text-black">
-            <span>Prototyping</span>
-            <span>User Research</span>
-            <span>Usability Testing</span>
-            <span>Visual Design</span>
-            <span>Design Systems</span>
+            {/* Skill Labels Grid */}
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-10 gap-y-4 text-rg-sm-normal text-black">
+              <span>Prototyping</span>
+              <span>User Research</span>
+              <span>Usability Testing</span>
+              <span>Visual Design</span>
+              <span>Design Systems</span>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
       <ToTopButton />
 
-      <Footer />
+      <div data-aos="fade-up" data-aos-delay="500">
+        <Footer />
+      </div>
     </main>
   );
 }

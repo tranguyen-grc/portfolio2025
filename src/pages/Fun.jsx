@@ -2,6 +2,8 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import GalleryImageCard from "../components/GalleryImageCard";
 import ToTopButton from "../components/ToTopButton";
+import { motion } from "framer-motion";
+import { useEffect } from "react";
 import port2023 from "../assets/gallery/2023port.png";
 import cards from "../assets/gallery/cards.jpg";
 import lux from "../assets/gallery/lux.jpg";
@@ -15,7 +17,10 @@ import soot from "../assets/gallery/soot.png";
 import planner from "../assets/gallery/planner.png";
 import holiday from "../assets/gallery/holiday.png";
 
-export default function Archive() {
+export default function Fun() {
+  useEffect(() => {
+    document.title = "Tra Nguyen | Fun";
+  }, []);
   const galleryItems = [
     {
       src: holiday,
@@ -41,7 +46,6 @@ export default function Archive() {
       tags: ["Graphic Design", "Illustration"],
       href: "https://www.behance.net/gallery/186009515/Avatar-Illustration",
     },
-
     {
       src: ps,
       title: "Photoshop Texture Exploration",
@@ -60,7 +64,6 @@ export default function Archive() {
       tags: ["Graphic Design", "Illustration"],
       href: "https://www.behance.net/gallery/192704051/Poster-Designs",
     },
-
     {
       src: wedding,
       title: "Wedding Designs",
@@ -79,7 +82,6 @@ export default function Archive() {
       tags: ["Graphic Design", "Illustration", "UI/UX"],
       href: "https://www.behance.net/gallery/193258553/Game-Event-Preview-Page-Mage",
     },
-
     {
       src: soot,
       title: "Digital Sticker Designs",
@@ -93,21 +95,36 @@ export default function Archive() {
       href: "https://www.behance.net/gallery/192704347/Spirited-Away-Planner",
     },
   ];
+
   return (
-    <main className=" ">
+    <main>
       <Navbar />
 
       <div className="columns-1 sm:columns-2 lg:columns-3 gap-3 px-2 sm:px-4 pt-6">
         {galleryItems.map((item, i) => (
-          <GalleryImageCard key={i} {...item} />
+          <motion.div
+            key={i}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.5, delay: i * 0.05 }}
+          >
+            <GalleryImageCard {...item} />
+          </motion.div>
         ))}
       </div>
 
       <ToTopButton />
 
-      <div className="px-6 sm:px-10 lg:px-[12.625rem]">
+      <motion.div
+        className="px-6 sm:px-10 lg:px-[12.625rem]"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.5 }}
+      >
         <Footer />
-      </div>
+      </motion.div>
     </main>
   );
 }

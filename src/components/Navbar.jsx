@@ -29,7 +29,7 @@ export default function Navbar() {
         <div className="flex gap-6 text-base-medium text-black whitespace-nowrap">
           {[
             { to: "/", label: "Work" },
-            { to: "/archive", label: "Archive" },
+            { to: "/fun", label: "Fun" },
             { to: "/about", label: "About" },
           ].map((item, index) => (
             <NavLink

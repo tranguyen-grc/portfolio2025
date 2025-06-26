@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Work from "./pages/Work";
-import Archive from "./pages/Archive";
+import Archive from "./pages/Fun";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import BespokeApp from "./pages/BespokeApp";
@@ -17,7 +17,7 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Work />} />
-        <Route path="/archive" element={<Archive />} />
+        <Route path="/fun" element={<Archive />} />
         <Route path="/about" element={<About />} />
         <Route path="/bespoke" element={<BespokeApp />} />
         <Route path="/sli" element={<Sli />} />

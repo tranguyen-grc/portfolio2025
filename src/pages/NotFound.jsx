@@ -5,7 +5,7 @@ export default function NotFound() {
       <h1 style={{ fontSize: "2rem", color: "#e11d48" }}>
         404 - Page Not Found
       </h1>
-      <p>The page you're looking for doesn’t exist.</p>
+      <p>The page you're looking for doesn't exist.</p>
     </div>
   );
 }
