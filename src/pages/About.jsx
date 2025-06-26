@@ -63,17 +63,17 @@ export default function About() {
           <a
             href="/TraNguyen_Resume_2025.pdf"
             download
-            className="group inline-flex items-center gap-2 px-4 py-2 border-2 text-black text-sm-medium cursor-pointer"
+            className="group inline-flex items-center gap-2 px-4 py-2 border-2 cursor-pointer w-fit transition-all duration-300 ease-in-out hover:scale-[1.015]"
             style={{
               borderRadius: "2rem",
               border: "2px solid var(--text-mediumgray)",
               background: "var(--bg-gray30)",
             }}
           >
-            <span className="transition-transform duration-300 ease-in-out group-hover:scale-110">
+            <span className="text-darkgray transition-opacity duration-200 group-hover:opacity-80">
               <ArrowDownToLine size={16} />
             </span>
-            <span className="transition-transform duration-300 ease-in-out group-hover:scale-110 text-rg-sm-normal">
+            <span className="text-rg-sm-normal transition-colors duration-200 group-hover:text-black">
               Resume
             </span>
           </a>

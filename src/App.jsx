@@ -5,6 +5,8 @@ import Archive from "./pages/Archive";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import BespokeApp from "./pages/BespokeApp";
+import Sli from "./pages/Sli";
+import Cchtf from "./pages/Cchtf";
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
         <Route path="/archive" element={<Archive />} />
         <Route path="/about" element={<About />} />
         <Route path="/bespoke" element={<BespokeApp />} />
+        <Route path="/sli" element={<Sli />} />
+        <Route path="/cchtf" element={<Cchtf />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

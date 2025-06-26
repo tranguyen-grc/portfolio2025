@@ -20,16 +20,20 @@ export default function Work() {
             image={bespokeProjectImg}
           />
         </Link>
-        <ProjectCard
-          title="SLI Website"
-          description="A website redesign for the Sustainable Land Initiative, focused on improving equipment rentals and admin tools."
-          image={sliProjectImg}
-        />
-        <ProjectCard
-          title="CCHTF Portal"
-          description="Central Coast Tree Heritage Foundation's platform for recording tree and user information."
-          image={cchtfProjectImg}
-        />
+        <Link to="/sli">
+          <ProjectCard
+            title="SLI Website"
+            description="A website redesign for the Sustainable Land Initiative, focused on improving equipment rentals and admin tools."
+            image={sliProjectImg}
+          />
+        </Link>
+        <Link to="/cchtf">
+          <ProjectCard
+            title="CCHTF Portal"
+            description="Central Coast Tree Heritage Foundation's platform for recording tree and user information."
+            image={cchtfProjectImg}
+          />
+        </Link>
       </section>
       <Footer />
     </main>

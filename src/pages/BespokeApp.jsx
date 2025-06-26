@@ -13,6 +13,7 @@ import Midfi from "../assets/bespoke/midfi.png";
 import Nav1 from "../assets/bespoke/nav1.png";
 import Nav2 from "../assets/bespoke/nav2.png";
 import ToTopButton from "../components/ToTopButton";
+import ImageLightbox from "../components/ImageLightbox";
 
 export default function BespokeApp() {
   return (
@@ -43,7 +44,7 @@ export default function BespokeApp() {
             <div className="max-w-[20rem]">
               <p className="text-h6 text-darkgray mb-1">Team</p>
               <p className="text-rg-sm-normal">
-                Kellana Calder, Katelyn Au, Meenakshi Vinod, Logan Watson, Tra
+                Keilana Calder, Katelyn Au, Meenakshi Vinod, Logan Watson, Tra
                 Nguyen (me!)
               </p>
             </div>
@@ -60,9 +61,7 @@ export default function BespokeApp() {
       {/* Content Sections */}
       <section className="py-10 flex flex-col gap-[4.5rem]">
         {/* Overview */}
-        <TwoColumnSection
-          title={<h2 className="text-h5 mt-1 text-black">Overview</h2>}
-        >
+        <TwoColumnSection title="Overview">
           <p className="text-rg-sm-normal text-black">
             In this team project, we designed a bespoke project management app
             tailored for property management teams. Our goal was to streamline
@@ -75,9 +74,7 @@ export default function BespokeApp() {
         </TwoColumnSection>
 
         {/* Problem */}
-        <TwoColumnSection
-          title={<h2 className="text-h5 mt-1 text-black">Problem</h2>}
-        >
+        <TwoColumnSection title="Problem">
           <p className="text-rg-sm-normal text-black">
             Homeowners lack an easy-to-use platform to submit, track, and
             communicate about service requests, leading to frustration, missed
@@ -86,9 +83,7 @@ export default function BespokeApp() {
         </TwoColumnSection>
 
         {/* Research */}
-        <TwoColumnSection
-          title={<h2 className="text-h5 mt-1 text-black">Research</h2>}
-        >
+        <TwoColumnSection title="Research">
           <div className="flex flex-col gap-[1.5rem] text-rg-sm-normal text-black">
             <p>
               We began with competitive analysis, examining tools like Trello,
@@ -117,7 +112,7 @@ export default function BespokeApp() {
                 features they valued in a project management tool. We used
                 affinity diagramming to synthesize their responses.
               </p>
-              <img
+              <ImageLightbox
                 src={BespokeAffinity}
                 alt="Bespoke Affinity Map"
                 className=" w-full object-cover rounded-[0.75rem]"
@@ -141,11 +136,7 @@ export default function BespokeApp() {
         </TwoColumnSection>
 
         {/* Feature Prioritization */}
-        <TwoColumnSection
-          title={
-            <h2 className="text-h5 mt-1 text-black">Feature Prioritization</h2>
-          }
-        >
+        <TwoColumnSection title="Feature Prioritization">
           <div className="flex flex-col gap-[1.5rem] text-rg-sm-normal text-black">
             <p>
               With a long list of possible features, we used an Effort vs.
@@ -154,7 +145,7 @@ export default function BespokeApp() {
               development.
             </p>
 
-            <img
+            <ImageLightbox
               src={impactEffort}
               alt="Impact Effort Matrix"
               className=" w-full object-cover rounded-[0.75rem]"
@@ -163,13 +154,7 @@ export default function BespokeApp() {
         </TwoColumnSection>
 
         {/* Information Architecture */}
-        <TwoColumnSection
-          title={
-            <h2 className="text-h5 mt-1 text-black">
-              Information Architecture
-            </h2>
-          }
-        >
+        <TwoColumnSection title="Information Architecture">
           <div className="flex flex-col gap-[1.5rem] text-rg-sm-normal text-black">
             <p>
               We created user journeys and an IA to visualize user flows and key
@@ -178,12 +163,12 @@ export default function BespokeApp() {
               clarity and discoverability.
             </p>
             <div className="flex flex-col md:flex-row gap-4">
-              <img
+              <ImageLightbox
                 src={Nav1}
                 alt="Bottom nav bar with notifications"
                 className="w-full md:w-1/2 object-cover rounded-[0.75rem]"
               />
-              <img
+              <ImageLightbox
                 src={Nav2}
                 alt="Bottom nav bar with profile"
                 className="w-full md:w-1/2 object-cover rounded-[0.75rem]"
@@ -196,13 +181,7 @@ export default function BespokeApp() {
         </TwoColumnSection>
 
         {/* My Role – Messaging Feature */}
-        <TwoColumnSection
-          title={
-            <h2 className="text-h5 mt-1 text-black">
-              My Role — Messaging Feature
-            </h2>
-          }
-        >
+        <TwoColumnSection title="My Role — Messaging Feature">
           <div className="flex flex-col gap-[1.5rem] text-rg-sm-normal text-black">
             <p>
               I was responsible for designing the messaging system. The goal was
@@ -223,7 +202,7 @@ export default function BespokeApp() {
                 to a specific task.
               </div>
             </div>
-            <img
+            <ImageLightbox
               src={Midfi}
               alt="Bespoke mid-fidelity mockups"
               className=" w-full object-cover rounded-[0.75rem]"
@@ -232,11 +211,7 @@ export default function BespokeApp() {
         </TwoColumnSection>
 
         {/* Testing & Iteration */}
-        <TwoColumnSection
-          title={
-            <h2 className="text-h5 mt-1 text-black">Testing & Iteration</h2>
-          }
-        >
+        <TwoColumnSection title="Testing & Iteration">
           <div className="flex flex-col gap-[1.5rem] text-rg-sm-normal text-black">
             <p>
               With the help of my team, I conducted user interviews with 10
@@ -244,7 +219,7 @@ export default function BespokeApp() {
               affinity mapping, I identified key insights that informed design
               improvements for the high-fidelity prototype.
             </p>
-            <img
+            <ImageLightbox
               src={Insights}
               alt="Bespoke key insights"
               className=" w-full object-cover rounded-[0.75rem]"
@@ -258,9 +233,7 @@ export default function BespokeApp() {
         </TwoColumnSection>
 
         {/* Outcome */}
-        <TwoColumnSection
-          title={<h2 className="text-h5 mt-1 text-black">Outcome</h2>}
-        >
+        <TwoColumnSection title="Outcome">
           <div className="flex flex-col gap-[1.5rem] text-rg-sm-normal text-black">
             <div className="flex flex-col gap-[1rem]">
               <p>The final prototype featured an integrated workspace with:</p>
@@ -276,7 +249,7 @@ export default function BespokeApp() {
             </div>
             <div className="flex flex-col gap-[1rem]">
               <p>Sending a direct message</p>
-              <img
+              <ImageLightbox
                 src={Hifi1}
                 alt="Sending a direct message hifi mockup"
                 className=" w-full object-cover rounded-[0.75rem]"
@@ -284,7 +257,7 @@ export default function BespokeApp() {
             </div>
             <div className="flex flex-col gap-[1rem]">
               <p>Reading a message in a message server (Maluaka)</p>
-              <img
+              <ImageLightbox
                 src={Hifi2}
                 alt="Reading a message in a message server (Maluaka) hifi mockup"
                 className=" w-full object-cover rounded-[0.75rem]"
@@ -292,7 +265,7 @@ export default function BespokeApp() {
             </div>
             <div className="flex flex-col gap-[1rem]">
               <p>Searching through a message server</p>
-              <img
+              <ImageLightbox
                 src={Hifi3}
                 alt="Searching through a message server hifi mockup"
                 className=" w-full object-cover rounded-[0.75rem]"
@@ -302,9 +275,7 @@ export default function BespokeApp() {
         </TwoColumnSection>
 
         {/* Takeaways */}
-        <TwoColumnSection
-          title={<h2 className="text-h5 mt-1 text-black">Takeaways</h2>}
-        >
+        <TwoColumnSection title="Takeaways">
           <div className="flex flex-col gap-[1.5rem] text-rg-sm-normal text-black">
             <p>What I learned:</p>
             <div className="px-4 py-3 rounded-[0.75rem] bg-gray30">
@@ -322,13 +293,7 @@ export default function BespokeApp() {
         </TwoColumnSection>
 
         {/* View the entire prototype! */}
-        <TwoColumnSection
-          title={
-            <h2 className="text-h5 mt-1 text-black">
-              View the entire prototype!
-            </h2>
-          }
-        >
+        <TwoColumnSection title="View the entire prototype!">
           <video
             src="/bespokeDemo.mp4"
             controls
