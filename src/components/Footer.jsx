@@ -4,7 +4,7 @@ import email from "../assets/email.svg";
 
 export default function Footer() {
   return (
-    <footer className="px-6 sm:px-10 lg:px-6 py-[5rem] flex flex-col gap-7 text-black">
+    <footer className="py-[5rem] flex flex-col gap-7 text-black">
       {/* Headline */}
       <div>
         <h2 className="text-h5 text-black mb-2">Let's connect!</h2>

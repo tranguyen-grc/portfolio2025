@@ -25,7 +25,7 @@ export default function About() {
 
       <section
         className="
-          px-6 sm:px-10 lg:px-6 py-[5rem]
+          py-[5rem]
           flex flex-col md:flex-row flex-wrap md:flex-nowrap
           items-center md:items-center justify-between gap-10
         "
@@ -47,7 +47,7 @@ export default function About() {
         </div>
 
         {/* Text Block (comes second on mobile, left on desktop) */}
-        <div className="order-2 md:order-1 w-full md:w-[42rem] text-left">
+        <div className="order-2 md:order-1 w-full md:w-[45rem] text-left">
           <h1 className="text-h4 text-black mb-4">Hi, I'm Tra Nguyen.</h1>
           <p className="text-rg-sm-normal text-black mb-4">
             I first got into UI/UX design by obsessing over game menus as a
@@ -81,7 +81,7 @@ export default function About() {
       </section>
 
       {/* Education Section */}
-      <section className="px-6 sm:px-10 lg:px-6 py-[5rem]">
+      <section className="py-[5rem]">
         <h2 className="text-h4 mb-8 text-black">Education</h2>
         <div className="flex flex-col gap-10">
           {/* University */}
@@ -125,7 +125,7 @@ export default function About() {
       </section>
 
       {/* Experience Section */}
-      <section className="px-6 sm:px-10 lg:px-6 py-[5rem]">
+      <section className="py-[5rem]">
         <h2 className="text-h4 mb-8 text-black">Experience</h2>
         <div className="flex flex-col gap-10">
           {/* Stanford */}
@@ -256,7 +256,7 @@ export default function About() {
       </section>
 
       {/* Tools and skills */}
-      <section className="px-6 sm:px-10 lg:px-6 py-[5rem]">
+      <section className="py-[5rem]">
         <h2 className="text-h4 mb-8 text-black">Tools + Skills</h2>
         <div className="flex flex-col items-start gap-12">
           {/* Tool Icons Grid */}
