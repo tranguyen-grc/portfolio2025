@@ -122,7 +122,7 @@ export default function About() {
               {/* Date second on mobile */}
               <div className="order-2 md:order-1 min-w-[8rem] text-grad text-darkgray">
                 <p>Expected Graduation</p>
-                <p>June 2027</p>
+                <p>June 2026</p>
               </div>
             </div>
 

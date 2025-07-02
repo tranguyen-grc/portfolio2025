@@ -39,7 +39,7 @@ export default function Navbar() {
                 `transition-all duration-200 ease-in-out ${
                   isActive
                     ? "text-darkgray"
-                    : "hover:text-darkgray hover:scale-105"
+                    : "hover:text-[#232323] hover:scale-105"
                 }`
               }
             >
