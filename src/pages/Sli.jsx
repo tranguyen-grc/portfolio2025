@@ -18,7 +18,7 @@ import Synthesis from "../assets/sli/synthesis.png";
 import Type from "../assets/sli/type.png";
 import TypeUsage from "../assets/sli/typeUsage.png";
 import Spacing from "../assets/sli/Spacing.png";
-import UserList from "../assets/sli/Userlist.png";
+import UserList from "../assets/sli/UserList.png";
 import User from "../assets/sli/user.png";
 import { Link, BookOpen, PenTool } from "lucide-react";
 import { useEffect } from "react";
