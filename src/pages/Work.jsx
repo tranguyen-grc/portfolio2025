@@ -34,8 +34,8 @@ export default function Work() {
         >
           <Link to="/bespoke">
             <ProjectCard
-              title="Bespoke App"
-              description="A project management app for the Bespoke Home Management Team."
+              title="Designing a Messaging System for Structured Collaboration"
+              description="Designed a structured messaging system for luxury property management teams, enabling task-based collaboration and streamlined communication."
               image={bespokeProjectImg}
             />
           </Link>
@@ -49,8 +49,8 @@ export default function Work() {
         >
           <Link to="/sli">
             <ProjectCard
-              title="SLI Website"
-              description="A website redesign for the Sustainable Land Initiative."
+              title="Redesigning SLI's Web Platform and Building a Scalable Design System"
+              description="Simplified rentals, streamlined admin workflows, and scaled design through systemized UI."
               image={sliProjectImg}
             />
           </Link>
@@ -64,8 +64,8 @@ export default function Work() {
         >
           <Link to="/cchtf">
             <ProjectCard
-              title="CCHTF Portal"
-              description="Central Coast Tree Heritage Foundation's platform for recording tree and user information."
+              title="Designing a Role-Based Tree Logging Platform for Central Coast Tree Heritage"
+              description="Led UX on a platform built from the ground up—featuring dual user roles, responsive design, and a scalable design system."
               image={cchtfProjectImg}
             />
           </Link>

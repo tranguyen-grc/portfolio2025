@@ -52,12 +52,14 @@ export default function Sli() {
 
       {/* Project Info */}
       <section className="py-10" data-aos="fade-up" data-aos-delay="100">
-        <h1 className="text-h4 text-black mb-8">SLI Website</h1>
+        <h1 className="text-h4 text-black mb-8">
+          Redesigning SLI's Web Platform and Building a Scalable Design System
+        </h1>
         <TwoColumnSection
           title={
             <div>
-              <p className="text-h6 text-darkgray mb-1">Role</p>
-              <p className="text-rg-sm-normal">UX Designer</p>
+              <p className="text-h6 text-darkgray mb-1">Client</p>
+              <p className="text-rg-sm-normal">Sustainable Land Initiative</p>
             </div>
           }
         >

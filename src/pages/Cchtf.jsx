@@ -53,13 +53,18 @@ export default function Cchtf() {
 
       {/* Project Info */}
       <section className="py-10" data-aos="fade-up" data-aos-delay="100">
-        <h1 className="text-h4 text-black mb-8">CCHTF Portal</h1>
+        <h1 className="text-h4 text-black mb-8">
+          Designing a Role-Based Tree Logging Platform for Central Coast Tree
+          Heritage
+        </h1>
         <div data-aos="fade-up" data-aos-delay="200">
           <TwoColumnSection
             title={
               <div>
-                <p className="text-h6 text-darkgray mb-1">Role</p>
-                <p className="text-rg-sm-normal">Product Designer</p>
+                <p className="text-h6 text-darkgray mb-1">Client</p>
+                <p className="text-rg-sm-normal">
+                  Central Coast Heritage Tree Foundation
+                </p>
               </div>
             }
           >
@@ -177,7 +182,7 @@ export default function Cchtf() {
                 </p>
               </div>
               <div className="flex flex-col gap-[1rem]">
-                <h3 className="text-h6">Volunteers</h3>
+                <h3 className="text-h6">Role Switching</h3>
                 <p>
                   Users with permissions could toggle between roles via the
                   profile dropdown. This functionality allowed admins to

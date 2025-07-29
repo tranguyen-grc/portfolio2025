@@ -11,6 +11,9 @@ import Insights from "../assets/bespoke/insights.png";
 import Midfi from "../assets/bespoke/midfi.png";
 import Nav1 from "../assets/bespoke/nav1.png";
 import Nav2 from "../assets/bespoke/nav2.png";
+import abTest from "../assets/bespoke/abTest.png";
+import CircleX from "../assets/circleX.svg";
+import CircleCheck from "../assets/circleCheck.svg";
 import ToTopButton from "../components/ToTopButton";
 import ImageLightbox from "../components/ImageLightbox";
 import { useEffect } from "react";
@@ -45,13 +48,15 @@ export default function BespokeApp() {
 
       {/* Project Info */}
       <section className="py-10" data-aos="fade-up" data-aos-delay="100">
-        <h1 className="text-h4 text-black mb-8">Bespoke iOS App</h1>
+        <h1 className="text-h4 text-black mb-8">
+          Designing a Messaging System for Structured Collaboration
+        </h1>
         <div data-aos="fade-up" data-aos-delay="200">
           <TwoColumnSection
             title={
               <div>
-                <p className="text-h6 text-darkgray mb-1">Role</p>
-                <p className="text-rg-sm-normal">Product Designer</p>
+                <p className="text-h6 text-darkgray mb-1">Client</p>
+                <p className="text-rg-sm-normal">Bespoke Home Management</p>
               </div>
             }
           >
@@ -59,8 +64,12 @@ export default function BespokeApp() {
               <div className="max-w-[20rem]">
                 <p className="text-h6 text-darkgray mb-1">Team</p>
                 <p className="text-rg-sm-normal">
-                  Keilana Calder, Katelyn Au, Meenakshi Vinod, Logan Watson, Tra
-                  Nguyen (me!)
+                  <span className="text-rg-sm-medium">Project Manager: </span>{" "}
+                  Keilana Calder
+                </p>
+                <p className="text-rg-sm-normal">
+                  <span className="text-rg-sm-medium">Designers: </span> Tra
+                  Nguyen (me!), Katelyn Au, Meenakshi Vinod, Logan Watson
                 </p>
               </div>
               <div>
@@ -76,18 +85,37 @@ export default function BespokeApp() {
 
       {/* Content Sections */}
       <section className="py-10 flex flex-col gap-[4.5rem]">
+        {/* View the entire prototype! */}
+        <div data-aos="fade-up" data-aos-delay="200">
+          <TwoColumnSection title="Preview the prototype!">
+            <video
+              src="/bespokeDemo.mp4"
+              controls
+              className="w-full rounded-[0.75rem]"
+            />
+          </TwoColumnSection>
+        </div>
         {/* Overview */}
         <div data-aos="fade-up" data-aos-delay="300">
           <TwoColumnSection title="Overview">
-            <p className="text-rg-sm-normal text-black">
-              In this team project, we designed a bespoke project management app
-              tailored for property management teams. Our goal was to streamline
-              communication, task delegation, and project tracking within
-              property-related workflows. I focused on designing and testing the
-              messaging feature, drawing inspiration from platforms like Discord
-              and Slack but customizing it for structured task-based
-              collaboration.
-            </p>
+            <div className="flex flex-col gap-[1.5rem]">
+              <p className="text-rg-sm-normal text-black">
+                Bespoke Home Management provides luxury property services for
+                high-net-worth homeowners. Their internal teams handle
+                maintenance, repairs, and scheduling across multiple properties.
+              </p>
+              <p className="text-rg-sm-normal text-black">
+                During this 9-week sprint, we focused on designing the
+                internal-facing side of their app—used by the Bespoke team to
+                coordinate tasks and communicate—while client-facing features
+                were scoped for a future phase.
+              </p>
+              <p className="text-rg-sm-normal text-black">
+                My role centered on designing a structured messaging system to
+                support seamless, property-linked collaboration and team
+                communication.
+              </p>
+            </div>
           </TwoColumnSection>
         </div>
 
@@ -95,9 +123,11 @@ export default function BespokeApp() {
         <div data-aos="fade-up" data-aos-delay="400">
           <TwoColumnSection title="Problem">
             <p className="text-rg-sm-normal text-black">
-              Homeowners lack an easy-to-use platform to submit, track, and
-              communicate about service requests, leading to frustration, missed
-              deadlines, and poor task management.
+              Bespoke Home Management's existing tools—spreadsheets, emails, and
+              disconnected messaging apps—led to fragmented communication and
+              inefficient task tracking. Information was scattered across
+              platforms, making it hard to locate records, verify timelines, or
+              maintain transparency across teams.
             </p>
           </TwoColumnSection>
         </div>
@@ -107,50 +137,88 @@ export default function BespokeApp() {
           <TwoColumnSection title="Research">
             <div className="flex flex-col gap-[1.5rem] text-rg-sm-normal text-black">
               <p>
-                We began with competitive analysis, examining tools like Trello,
-                Asana, Monday.com, and Slack to identify strengths, gaps, and
-                design opportunities.
+                We reviewed tools like Slack, Discord, and Asana to identify
+                design opportunities. Instead of replicating their models, we
+                distilled key lessons into what to include and avoid based on
+                Bespoke's needs.
               </p>
-              <div className="flex flex-col gap-[1.5rem]">
-                <p>Key insights (specific to messaging):</p>
-                <div className="px-4 py-3 rounded-[0.75rem] bg-gray30">
-                  <span className="text-rg-sm-medium">Facebook Messenger:</span>{" "}
-                  Great for general messaging with group chats and media
-                  sharing, but lacks structure for task-based collaboration and
-                  secure work communication.
+              <div className="flex flex-col md:flex-row gap-4">
+                <div className="flex flex-col gap-[1rem] w-1/2">
+                  <div className="flex flex-row gap-[0.7rem]">
+                    <img src={CircleCheck} />
+                    <p className="text-rg-sm-medium">Things to Include</p>
+                  </div>
+                  <div className="px-4 py-3 rounded-[0.75rem] bg-gray30">
+                    Structured channels for organized, property-specific
+                    communication
+                  </div>
+                  <div className="px-4 py-3 rounded-[0.75rem] bg-gray30">
+                    Clear separation between general and task-specific
+                    conversations
+                  </div>
+                  <div className="px-4 py-3 rounded-[0.75rem] bg-gray30">
+                    Support for direct and group messaging outside structured
+                    threads
+                  </div>
+                  <div className="px-4 py-3 rounded-[0.75rem] bg-gray30">
+                    Searchable message history to access past conversations
+                    easily
+                  </div>
+                  <div className="px-4 py-3 rounded-[0.75rem] bg-gray30">
+                    Familiar patterns (e.g., channel/server model) to reduce
+                    onboarding time
+                  </div>
                 </div>
-                <div className="px-4 py-3 rounded-[0.75rem] bg-gray30">
-                  <span className="text-rg-sm-medium">Slack:</span> Excellent
-                  channel-based structure for organized communication, but can
-                  become cluttered without task-level integration or contextual
-                  filtering.
+                <div className="flex flex-col gap-[1rem] w-1/2">
+                  <div className="flex flex-row gap-[0.7rem]">
+                    <img src={CircleX} />
+                    <p className="text-rg-sm-medium">Things to Avoid</p>
+                  </div>
+                  <div className="px-4 py-3 rounded-[0.75rem] bg-gray30">
+                    Overly general chat spaces that lead to clutter and
+                    off-topic noise
+                  </div>
+                  <div className="px-4 py-3 rounded-[0.75rem] bg-gray30">
+                    Lack of context. Messages without links to tasks or
+                    properties
+                  </div>
+                  <div className="px-4 py-3 rounded-[0.75rem] bg-gray30">
+                    Flat hierarchies that make it hard to distinguish roles,
+                    teams, or topics
+                  </div>
+                  <div className="px-4 py-3 rounded-[0.75rem] bg-gray30">
+                    Overly general chat spaces that lead to clutter and
+                    Disconnected communication that forces users to jump between
+                    tools
+                  </div>
                 </div>
               </div>
               <div className="flex flex-col gap-[1.5rem]">
                 <p>
-                  To supplement this, we interviewed stakeholders—including
-                  property managers, contractors, and residents—to understand
-                  what features they valued in a project management tool. We
-                  used affinity diagramming to synthesize their responses.
+                  We interviewed stakeholders across Bespoke's team to
+                  understand their real-world needs. We used affinity
+                  diagramming to synthesize their responses.
                 </p>
                 <ImageLightbox
                   src={BespokeAffinity}
                   alt="Bespoke Affinity Map"
                   className=" w-full object-cover rounded-[0.75rem]"
                 />
-                <p>
-                  I developed user stories to ground our understanding in real
-                  workflows, identifying needs like:
-                </p>
-                <div className="flex flex col px-4 py-3 rounded-[0.75rem] bg-gray30">
-                  “As a team member, I want to send messages tied to specific
-                  tasks within a property so that communication stays organized
-                  and context-specific.”
-                </div>
-                <div className="px-4 py-3 rounded-[0.75rem] bg-gray30">
-                  “As a user, I want to send direct messages outside of
-                  properties and tasks so I can have side conversations or quick
-                  check-ins when needed.”
+                <div className="flex flex-col gap-[1rem]">
+                  <p>
+                    I developed user stories to ground our understanding in real
+                    workflows, identifying needs like:
+                  </p>
+                  <div className="flex flex col px-4 py-3 rounded-[0.75rem] bg-gray30">
+                    “As a team member, I want to send messages tied to specific
+                    tasks within a property so that communication stays
+                    organized and context-specific.”
+                  </div>
+                  <div className="px-4 py-3 rounded-[0.75rem] bg-gray30">
+                    “As a user, I want to send direct messages outside of
+                    properties and tasks so I can have side conversations or
+                    quick check-ins when needed.”
+                  </div>
                 </div>
               </div>
             </div>
@@ -162,10 +230,8 @@ export default function BespokeApp() {
           <TwoColumnSection title="Feature Prioritization">
             <div className="flex flex-col gap-[1.5rem] text-rg-sm-normal text-black">
               <p>
-                With a long list of possible features, we used an Effort vs.
-                Impact matrix to determine our MVP scope. Features that balanced
-                high impact and reasonable implementation effort were chosen for
-                development.
+                We used an Effort vs. Impact matrix to narrow down our MVP
+                scope.
               </p>
 
               <ImageLightbox
@@ -173,6 +239,26 @@ export default function BespokeApp() {
                 alt="Impact Effort Matrix"
                 className=" w-full object-cover rounded-[0.75rem]"
               />
+              <div className="flex flex-col gap-[1rem]">
+                <p className="text-rg-sm-medium">
+                  Included in MVP (Low Effort, High Impact):
+                </p>
+                <div className="px-4 py-3 rounded-[0.75rem] bg-gray30">
+                  Search for messages, tasks, and records
+                </div>
+                <div className="px-4 py-3 rounded-[0.75rem] bg-gray30">
+                  Task prioritization and urgent service flags
+                </div>
+                <div className="px-4 py-3 rounded-[0.75rem] bg-gray30">
+                  Centralized communication within each property
+                </div>
+                <div className="px-4 py-3 rounded-[0.75rem] bg-gray30">
+                  In-task messaging for clarity and accountability
+                </div>
+                <div className="px-4 py-3 rounded-[0.75rem] bg-gray30">
+                  Support for time-sensitive requests
+                </div>
+              </div>
             </div>
           </TwoColumnSection>
         </div>
@@ -187,6 +273,11 @@ export default function BespokeApp() {
                 we conducted A/B testing on different navigation layouts to
                 ensure clarity and discoverability.
               </p>
+              <ImageLightbox
+                src={abTest}
+                alt="Different placements of features to test"
+                className="w-full object-cover rounded-[0.75rem]"
+              />
               <div className="flex flex-col md:flex-row gap-4">
                 <ImageLightbox
                   src={Nav1}
@@ -211,23 +302,47 @@ export default function BespokeApp() {
           <TwoColumnSection title="My Role — Messaging Feature">
             <div className="flex flex-col gap-[1.5rem] text-rg-sm-normal text-black">
               <p>
-                I was responsible for designing the messaging system. The goal
-                was to mirror the familiarity of tools like Slack while
-                tailoring the experience to the structure of property
-                management. I created the mid-fidelity prototype based on these
-                features:
+                I led the design of the in-app messaging experience with these
+                key goals:
               </p>
-              <div className="flex flex-col gap-[1.5rem]">
+              <div className="flex flex-col gap-[1rem]">
                 <div className="px-4 py-3 rounded-[0.75rem] bg-gray30">
-                  Each property functions as a “server.”
+                  Create structured, task-contextual communication that avoids
+                  the clutter of tools like Slack
                 </div>
                 <div className="px-4 py-3 rounded-[0.75rem] bg-gray30">
-                  Channels are auto-generated based on tasks or departments
-                  (e.g., #toilet-fix-2/17).
+                  Enable property-specific collaboration through auto-organized
+                  channels
                 </div>
                 <div className="px-4 py-3 rounded-[0.75rem] bg-gray30">
-                  Main Messages support general team communication that isn’t
-                  tied to a specific task.
+                  Support private, ad-hoc conversations via direct and group
+                  messages
+                </div>
+                <div className="px-4 py-3 rounded-[0.75rem] bg-gray30">
+                  Make finding past conversations easy through global search
+                </div>
+              </div>
+              <div className="flex flex-col gap-[1rem]">
+                <p className="text-rg-sm-medium">
+                  Why not just use Slack or Discord?
+                </p>
+                <p>
+                  The Bespoke team needed more than a generic chat tool. They
+                  required messaging tied directly to service tasks, organized
+                  within each property's structure rather than abstract servers.
+                  This approach ensured clearer visibility, better
+                  accountability, and a centralized record of all communication.
+                </p>
+              </div>
+              <div className="flex flex-col gap-[1rem]">
+                <p className="text-rg-sm-medium">Property-as-Server Model</p>
+                <p>Each property acts as a “server” housing:</p>
+                <div className="px-4 py-3 rounded-[0.75rem] bg-gray30">
+                  Auto-generated channels for service tasks (#toilet-fix-2/17),
+                  organized in "Current" and "Completed" folders
+                </div>
+                <div className="px-4 py-3 rounded-[0.75rem] bg-gray30">
+                  A general “Main Messages” channel for non-task communication
                 </div>
               </div>
               <ImageLightbox
@@ -315,29 +430,31 @@ export default function BespokeApp() {
             <div className="flex flex-col gap-[1.5rem] text-rg-sm-normal text-black">
               <p>What I learned:</p>
               <div className="px-4 py-3 rounded-[0.75rem] bg-gray30">
-                Familiar mental models (e.g., Slack's servers) help reduce
-                onboarding time when adapted thoughtfully.
+                <span className="text-rg-sm-medium">
+                  Structured mental models reduce cognitive load:
+                </span>{" "}
+                adapting “servers” and “channels” helped users onboard faster.
               </div>
               <div className="px-4 py-3 rounded-[0.75rem] bg-gray30">
-                IA testing early on can prevent major usability issues later.
+                <span className="text-rg-sm-medium">
+                  Designing with context leads to better tools:
+                </span>{" "}
+                tying messages to tasks added needed clarity.
               </div>
               <div className="px-4 py-3 rounded-[0.75rem] bg-gray30">
-                Collaborative design benefits from assigning ownership to
-                specific features—this allowed us to go deeper in our individual
-                areas.
+                <span className="text-rg-sm-medium">
+                  IA testing early is critical:
+                </span>{" "}
+                it surfaced issues in layout before they became rework.
+              </div>
+              <div className="px-4 py-3 rounded-[0.75rem] bg-gray30">
+                <span className="text-rg-sm-medium">
+                  Ownership accelerates depth:
+                </span>{" "}
+                leading the messaging system let me explore and refine the
+                design more thoroughly.
               </div>
             </div>
-          </TwoColumnSection>
-        </div>
-
-        {/* View the entire prototype! */}
-        <div data-aos="fade-up" data-aos-delay="1200">
-          <TwoColumnSection title="View the entire prototype!">
-            <video
-              src="/bespokeDemo.mp4"
-              controls
-              className="w-full rounded-[0.75rem]"
-            />
           </TwoColumnSection>
         </div>
       </section>
