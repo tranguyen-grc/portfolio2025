@@ -143,7 +143,7 @@ export default function BespokeApp() {
                 Bespoke's needs.
               </p>
               <div className="flex flex-col md:flex-row gap-4">
-                <div className="flex flex-col gap-[1rem] w-1/2">
+                <div className="flex flex-col gap-[1rem] lg:w-1/2">
                   <div className="flex flex-row gap-[0.7rem]">
                     <img src={CircleCheck} />
                     <p className="text-rg-sm-medium">Things to Include</p>
@@ -169,7 +169,7 @@ export default function BespokeApp() {
                     onboarding time
                   </div>
                 </div>
-                <div className="flex flex-col gap-[1rem] w-1/2">
+                <div className="flex flex-col gap-[1rem] lg:w-1/2">
                   <div className="flex flex-row gap-[0.7rem]">
                     <img src={CircleX} />
                     <p className="text-rg-sm-medium">Things to Avoid</p>
