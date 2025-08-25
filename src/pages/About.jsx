@@ -125,23 +125,6 @@ export default function About() {
                 <p>June 2026</p>
               </div>
             </div>
-
-            {/* High School */}
-            <div className="flex flex-col md:flex-row md:gap-[10rem] items-start">
-              {/* Details first on mobile */}
-              <div className="order-1 md:order-2 flex-1">
-                <p className="text-rg-sm-medium text-black">
-                  Henry M. Gunn High School
-                </p>
-                <p className="text-rg-sm-normal text-darkgray">
-                  Weighted GPA: 4.3
-                </p>
-              </div>
-              {/* Dates second on mobile */}
-              <div className="order-2 md:order-1 min-w-[8rem] text-grad text-darkgray">
-                <p>Aug 2019 — June 2023</p>
-              </div>
-            </div>
           </div>
         </section>
       </div>
@@ -151,6 +134,34 @@ export default function About() {
         <section className="py-[5rem]">
           <h2 className="text-h4 mb-8 text-black">Experience</h2>
           <div className="flex flex-col gap-10">
+            {/* ASPEN internship */}
+            <div className="flex flex-col md:flex-row md:gap-[10rem] items-start">
+              {/* Dates */}
+              <div className="min-w-[8rem] text-grad text-darkgray text-sm-medium">
+                <p>Jan 2025 — Present</p>
+              </div>
+              <div>
+                <p className="text-rg-sm-medium text-black">
+                  Graphic Design Intern{" "}
+                  <span className="text-rg-sm-italic">
+                    @ Advanced Systems for Power Engineering, Inc.
+                  </span>
+                </p>
+                <ul className="list-disc text-rg-sm-normal text-darkgray pl-5 mt-2 space-y-1">
+                  <li>
+                    Design ads for T&D World (~50K readership) and IEEE PES
+                    (~30K members), showcasing ASPEN's flagship products
+                    (OneLiner, PowerFlow)
+                  </li>
+                  <li>
+                    Create brand styling guidelines and design leaflets for
+                    international conferences, supporting global outreach (1K—5K
+                    engineers)
+                  </li>
+                </ul>
+              </div>
+            </div>
+
             {/* Stanford */}
             <div className="flex flex-col md:flex-row md:gap-[10rem] items-start">
               {/* Dates */}
@@ -166,17 +177,16 @@ export default function About() {
                 </p>
                 <ul className="list-disc text-rg-sm-normal text-darkgray pl-5 mt-2 space-y-1">
                   <li>
-                    Collaborated with stakeholders to align ad designs with
-                    marketing objectives and audience expectations for the
-                    Summer and Academic Year internship terms
+                    Collaborated with stakeholders across two internship terms
+                    (Summer + Academic Year) to align ad designs with marketing
+                    objectives and student audience needs
                   </li>
                   <li>
                     Led the design and prototyping of an AI chat website
                     specific to HepB and liver cancer
                   </li>
                   <li>
-                    Created engaging graphics and animations for social media to
-                    promote events
+                    Produced 20+ graphics/animations to promote 8 health events
                   </li>
                   <li>Managed and maintained the HepB Moms website</li>
                 </ul>
@@ -187,34 +197,29 @@ export default function About() {
             <div className="flex flex-col md:flex-row md:gap-[10rem] items-start">
               {/* Dates */}
               <div className="min-w-[8rem] text-grad text-darkgray text-sm-medium">
-                <p>Aug 2024 — Present</p>
+                <p>Aug 2024 — Dec 2024</p>
               </div>
               <div>
                 <p className="text-rg-sm-medium text-black">
-                  Graphic Designer + Web Project Coordinator{" "}
+                  Web Project Coordinator{" "}
                   <span className="text-rg-sm-italic">
                     @ Advanced Systems for Power Engineering, Inc.
                   </span>
                 </p>
                 <ul className="list-disc text-rg-sm-normal text-darkgray pl-5 mt-2 space-y-1">
                   <li>
-                    Collaborated with ASPEN executives and a web developer to
-                    redesign the company website, ensuring a user-friendly
-                    experience for both new and returning clients
+                    Collaborated with executives and a developer to redesign
+                    ASPEN's corporate website, used by 750+ client organizations
+                    in 68+ countries
                   </li>
                   <li>
-                    Proposed optimized layouts and user flows to enhance
-                    navigation and improve overall usability
+                    Proposed layouts and user flows to improve usability for
+                    global clients in the power engineering sector
                   </li>
                   <li>
                     Designed visually appealing website graphics using Adobe
                     Illustrator and Adobe Photoshop to align with ASPEN's
                     branding
-                  </li>
-                  <li>
-                    Designed advertisements for engineering magazines, including
-                    T&D World and IEEE Power & Energy, showcasing ASPEN's
-                    engineering software products such as OneLiner and PowerFlow
                   </li>
                 </ul>
               </div>
@@ -238,8 +243,12 @@ export default function About() {
                     interfaces
                   </li>
                   <li>
-                    Created dashboards and data tables to log and manage tree
-                    and user information effectively
+                    Built dashboards and data tables to manage hundreds of
+                    records
+                  </li>
+                  <li>
+                    Collaborated with a 15-person team (developers, PMs,
+                    designers, client)
                   </li>
                 </ul>
               </div>
@@ -258,8 +267,8 @@ export default function About() {
                 </p>
                 <ul className="list-disc text-rg-sm-normal text-darkgray pl-5 mt-2 space-y-1">
                   <li>
-                    Conducted competitor analysis, user stories, and feature
-                    prioritization using an effort vs. impact matrix
+                    Conducted 10+ user interviews and competitor analysis of 5+
+                    platforms
                   </li>
                   <li>
                     Designed a task-based messaging system modeled after
@@ -270,8 +279,8 @@ export default function About() {
                     UI in high-fidelity iterations
                   </li>
                   <li>
-                    Collaborated on A/B testing and user flows to refine early
-                    navigation and structure
+                    Ran A/B testing and user flow refinements with a team of 1
+                    PM + 4 designers
                   </li>
                 </ul>
               </div>
