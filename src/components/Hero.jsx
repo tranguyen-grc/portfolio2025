@@ -37,9 +37,9 @@ export default function Hero() {
           </div>
 
           {/* Right: Text block */}
-          <div className="flex flex-col items-start gap-6 w-full max-w-[25.1875rem] min-w-0 text-left">
+          <div className="flex flex-col items-start gap-6 w-full max-w-[25.1875rem] min-w-[12rem] text-left">
             <h1 className="heading-h4 text-black">Tra Nguyen</h1>
-            <p className="text-lg-normal text-darkgray md:text-rg-sm-medium">
+            <p className="text-lg-normal text-darkgray">
               A multidisciplinary designer studying Computer Science + UI/UX
               Design @ CalPoly SLO.
             </p>
