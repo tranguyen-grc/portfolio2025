@@ -41,6 +41,18 @@ body {
 }
 
 @layer components {
+  .text-h3 {
+    font-size: 1.8rem;
+    line-height: 2.51rem;
+    font-weight: 500;
+    font-family: "General Sans", sans-serif;
+
+    @media (min-width: 768px) {
+      font-size: 1.5rem;
+      line-height: 2.1rem;
+    }
+  }
+
   .text-h4 {
     font-size: 1.5rem;
     line-height: 2.1rem;

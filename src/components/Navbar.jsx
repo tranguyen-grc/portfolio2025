@@ -20,13 +20,13 @@ export default function Navbar() {
         {/* Logo */}
         <Link
           to="/"
-          className="heading-h5-mb text-black transition-transform hover:scale-105"
+          className="text-h6 text-black transition-transform hover:scale-105"
         >
           TN
         </Link>
 
         {/* Nav Links */}
-        <div className="flex gap-6 text-base-medium text-black whitespace-nowrap">
+        <div className="flex gap-6 text-rg-sm-medium text-black whitespace-nowrap">
           {[
             { to: "/", label: "Work" },
             { to: "/fun", label: "Fun" },
