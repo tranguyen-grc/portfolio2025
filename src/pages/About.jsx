@@ -150,12 +150,12 @@ export default function About() {
                 <ul className="list-disc text-rg-sm-normal text-darkgray pl-5 mt-2 space-y-1">
                   <li>
                     Design ads for T&D World (~50K readership) and IEEE PES
-                    (~30K members), showcasing ASPEN's flagship products
-                    (OneLiner, PowerFlow)
+                    (~30K members) magazines, showcasing ASPEN's flagship
+                    products (OneLiner, PowerFlow)
                   </li>
                   <li>
                     Create brand styling guidelines and design leaflets for
-                    international conferences, supporting global outreach (1K—5K
+                    international conferences, supporting global outreach (5K
                     engineers)
                   </li>
                 </ul>
