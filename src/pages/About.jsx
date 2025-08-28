@@ -72,7 +72,7 @@ export default function About() {
           <p className="text-rg-sm-normal text-black mb-4">
             I first got into UI/UX design by obsessing over game menus as a
             kid—I loved how interfaces could shape the whole experience. Now,
-            I'm studying Computer Science and UI/UX Design at Cal Poly San Luis
+            I'm studying UI/UX Design and Computer Science at Cal Poly San Luis
             Obispo, aiming to become a designer who understands both creative
             and technical sides of product building.
           </p>
