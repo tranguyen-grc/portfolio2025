@@ -6,9 +6,6 @@ module.exports = {
       fontFamily: {
         sans: ['"General Sans"', "sans-serif"],
       },
-      screens: {
-        "max-1420": { max: "900px" }, // applies styles up to 1420px
-      },
     },
   },
   plugins: [],

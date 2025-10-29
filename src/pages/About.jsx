@@ -71,7 +71,7 @@ export default function About() {
           <h1 className="text-h4 text-black mb-4">Hi, I'm Tra Nguyen.</h1>
           <p className="text-rg-sm-normal text-black mb-4">
             I first got into UI/UX design by obsessing over game menus as a
-            kid—I loved how interfaces could shape the whole experience. Now,
+            kid, noticing how interfaces could shape the whole experience. Now,
             I'm studying UI/UX Design and Computer Science at Cal Poly San Luis
             Obispo, aiming to become a designer who understands both creative
             and technical sides of product building.
@@ -138,7 +138,7 @@ export default function About() {
             <div className="flex flex-col md:flex-row md:gap-[10rem] items-start">
               {/* Dates */}
               <div className="min-w-[8rem] text-grad text-darkgray text-sm-medium">
-                <p>Jan 2025 — Present</p>
+                <p>Jan 2025 — Sept 2025</p>
               </div>
               <div>
                 <p className="text-rg-sm-medium text-black">
@@ -149,12 +149,15 @@ export default function About() {
                 </p>
                 <ul className="list-disc text-rg-sm-normal text-darkgray pl-5 mt-2 space-y-1">
                   <li>
-                    Design ads for T&D World (~50K readership) and IEEE PES
+                    Designed ads for T&D World (~50K readership) and IEEE PES
                     (~30K members) magazines, showcasing ASPEN's flagship
                     products (OneLiner, PowerFlow)
                   </li>
                   <li>
-                    Create brand styling guidelines and design leaflets for
+                    Conducted heuristic evaluation of the UX for an upcoming circuit breaker diagramming software, identifying usability improvements and design recommendations
+                  </li>
+                  <li>
+                    Created brand styling guidelines and design leaflets for
                     international conferences, supporting global outreach (5K
                     engineers)
                   </li>
@@ -225,35 +228,6 @@ export default function About() {
               </div>
             </div>
 
-            {/* H4I */}
-            <div className="flex flex-col md:flex-row md:gap-[10rem] items-start">
-              {/* Dates */}
-              <div className="min-w-[8rem] text-grad text-darkgray text-sm-medium">
-                <p>Oct 2024 — Present</p>
-              </div>
-              <div>
-                <p className="text-rg-sm-medium text-black">
-                  UI/UX Designer{" "}
-                  <span className="text-rg-sm-italic">@ Hack4Impact</span>
-                </p>
-                <ul className="list-disc text-rg-sm-normal text-darkgray pl-5 mt-2 space-y-1">
-                  <li>
-                    Designed a responsive website for the Central Coast Heritage
-                    Tree Foundation, featuring distinct admin and volunteer
-                    interfaces
-                  </li>
-                  <li>
-                    Built dashboards and data tables to manage hundreds of
-                    records
-                  </li>
-                  <li>
-                    Collaborated with a 15-person team (developers, PMs,
-                    designers, client)
-                  </li>
-                </ul>
-              </div>
-            </div>
-
             {/* iter8 */}
             <div className="flex flex-col md:flex-row md:gap-[10rem] items-start">
               {/* Dates */}
@@ -281,6 +255,35 @@ export default function About() {
                   <li>
                     Ran A/B testing and user flow refinements with a team of 1
                     PM + 4 designers
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* H4I */}
+            <div className="flex flex-col md:flex-row md:gap-[10rem] items-start">
+              {/* Dates */}
+              <div className="min-w-[8rem] text-grad text-darkgray text-sm-medium">
+                <p>Oct 2024 — June 2025</p>
+              </div>
+              <div>
+                <p className="text-rg-sm-medium text-black">
+                  UI/UX Designer{" "}
+                  <span className="text-rg-sm-italic">@ Hack4Impact</span>
+                </p>
+                <ul className="list-disc text-rg-sm-normal text-darkgray pl-5 mt-2 space-y-1">
+                  <li>
+                    Designed a responsive website for the Central Coast Heritage
+                    Tree Foundation, featuring distinct admin and volunteer
+                    interfaces
+                  </li>
+                  <li>
+                    Built dashboards and data tables to manage hundreds of
+                    records
+                  </li>
+                  <li>
+                    Collaborated with a 15-person team (developers, PMs,
+                    designers, client)
                   </li>
                 </ul>
               </div>
