@@ -1,17 +1,17 @@
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
-import ProjectCard from "../components/ProjectCard";
-import bespokeProjectImg from "../assets/bespoke.jpg";
-import sliProjectImg from "../assets/sli.jpg";
-import cchtfProjectImg from "../assets/cchtf.jpg";
-import Footer from "../components/Footer";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import { useEffect } from "react";
+import Navbar from '../components/Navbar';
+import Hero from '../components/Hero';
+import ProjectCard from '../components/ProjectCard';
+import bespokeProjectImg from '../assets/bespoke.jpg';
+import sliProjectImg from '../assets/sli.jpg';
+import cchtfProjectImg from '../assets/cchtf.jpg';
+import Footer from '../components/Footer';
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { useEffect } from 'react';
 
 export default function Work() {
   useEffect(() => {
-    document.title = "Tra Nguyen | Work";
+    document.title = 'Tra Nguyen | Work';
   }, []);
   return (
     <main className="px-6 sm:px-10 lg:px-[12.625rem]">

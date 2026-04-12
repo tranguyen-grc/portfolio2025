@@ -1,4 +1,4 @@
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link } from 'react-router-dom';
 
 export default function Navbar() {
   return (
@@ -11,10 +11,10 @@ export default function Navbar() {
           mx-auto mt-6 backdrop-blur-md
         `}
         style={{
-          borderRadius: "2rem",
-          border: "2px solid var(--text-mediumgray)",
-          background: "var(--bg-gray30)",
-          backdropFilter: "blur(2.75px)",
+          borderRadius: '2rem',
+          border: '2px solid var(--text-mediumgray)',
+          background: 'var(--bg-gray30)',
+          backdropFilter: 'blur(2.75px)',
         }}
       >
         {/* Logo */}
@@ -33,18 +33,16 @@ export default function Navbar() {
   "
         >
           {[
-            { to: "/", label: "Work" },
-            { to: "/fun", label: "Fun" },
-            { to: "/about", label: "About" },
+            { to: '/', label: 'Work' },
+            { to: '/fun', label: 'Fun' },
+            { to: '/about', label: 'About' },
           ].map((item, index) => (
             <NavLink
               key={index}
               to={item.to}
               className={({ isActive }) =>
                 `transition-all duration-200 ease-in-out ${
-                  isActive
-                    ? "text-darkgray"
-                    : "hover:text-[#232323] hover:scale-105"
+                  isActive ? 'text-darkgray' : 'hover:text-[#232323] hover:scale-105'
                 }`
               }
             >

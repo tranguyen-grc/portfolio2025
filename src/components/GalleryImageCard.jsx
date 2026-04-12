@@ -1,4 +1,4 @@
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight } from 'lucide-react';
 
 export default function GalleryImageCard({ src, title, tags = [], href }) {
   return (
@@ -8,19 +8,22 @@ export default function GalleryImageCard({ src, title, tags = [], href }) {
       rel="noopener noreferrer"
       className="mb-3 break-inside-avoid block w-full cursor-pointer group"
     >
-      <div className="relative w-full rounded-[0.75rem] overflow-hidden">
+      <div
+        className="relative w-full rounded-[0.75rem] overflow-hidden"
+        style={{ minHeight: '180px', willChange: 'transform, opacity' }}
+      >
         <img
           src={src}
           alt={title}
+          loading="lazy"
+          decoding="async"
           className="w-full h-auto object-contain rounded-[0.75rem] transition-transform duration-300 group-hover:scale-[1.01]"
+          style={{ willChange: 'transform, opacity', transform: 'translateZ(0)' }}
         />
 
         {/* Top-right arrow */}
         <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-          <ArrowUpRight
-            className="text-white bg-black/50 rounded-full p-1"
-            size={30}
-          />
+          <ArrowUpRight className="text-white bg-black/50 rounded-full p-1" size={30} />
         </div>
 
         {/* Bottom overlay */}
@@ -28,10 +31,7 @@ export default function GalleryImageCard({ src, title, tags = [], href }) {
           <p className="font-medium">{title}</p>
           <div className="flex flex-wrap gap-1 mt-1">
             {tags.map((tag, i) => (
-              <span
-                key={i}
-                className="text-xs bg-white/20 px-2 py-0.5 rounded-full"
-              >
+              <span key={i} className="text-xs bg-white/20 px-2 py-0.5 rounded-full">
                 {tag}
               </span>
             ))}

@@ -1,38 +1,38 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import SliHero from "../assets/sli.jpg";
-import ImageLightbox from "../components/ImageLightbox";
-import TwoColumnSection from "../components/TwoColumnSection";
-import ToTopButton from "../components/ToTopButton";
-import Affinity from "../assets/sli/affinity.png";
-import Buttons from "../assets/sli/buttons.png";
-import Cards from "../assets/sli/cards.png";
-import Colors from "../assets/sli/colors.png";
-import EquipmentList from "../assets/sli/EquipmentList.png";
-import Equipment from "../assets/sli/equipment.png";
-import Farmshare from "../assets/sli/farmshare.png";
-import ReservationList from "../assets/sli/ReservationList.png";
-import Reservation from "../assets/sli/reservation.png";
-import Reviews from "../assets/sli/reviews.png";
-import Synthesis from "../assets/sli/synthesis.png";
-import Type from "../assets/sli/type.png";
-import TypeUsage from "../assets/sli/typeUsage.png";
-import Spacing from "../assets/sli/Spacing.png";
-import UserList from "../assets/sli/UserList.png";
-import User from "../assets/sli/user.png";
-import { Link, BookOpen, PenTool } from "lucide-react";
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import SliHero from '../assets/sli.jpg';
+import ImageLightbox from '../components/ImageLightbox';
+import TwoColumnSection from '../components/TwoColumnSection';
+import ToTopButton from '../components/ToTopButton';
+import Affinity from '../assets/sli/affinity.png';
+import Buttons from '../assets/sli/buttons.png';
+import Cards from '../assets/sli/cards.png';
+import Colors from '../assets/sli/colors.png';
+import EquipmentList from '../assets/sli/EquipmentList.png';
+import Equipment from '../assets/sli/equipment.png';
+import Farmshare from '../assets/sli/farmshare.png';
+import ReservationList from '../assets/sli/ReservationList.png';
+import Reservation from '../assets/sli/reservation.png';
+import Reviews from '../assets/sli/reviews.png';
+import Synthesis from '../assets/sli/synthesis.png';
+import Type from '../assets/sli/type.png';
+import TypeUsage from '../assets/sli/typeUsage.png';
+import Spacing from '../assets/sli/Spacing.png';
+import UserList from '../assets/sli/UserList.png';
+import User from '../assets/sli/user.png';
+import { Link, BookOpen, PenTool } from 'lucide-react';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Sli() {
   useEffect(() => {
-    document.title = "Tra Nguyen | SLI Website";
+    document.title = 'Tra Nguyen | SLI Website';
   }, []);
   useEffect(() => {
     AOS.init({
       duration: 700,
-      easing: "ease-out-cubic",
+      easing: 'ease-out-cubic',
       once: true,
       offset: 80,
     });
@@ -67,19 +67,16 @@ export default function Sli() {
             <div className="max-w-[20rem]">
               <p className="text-h6 text-darkgray mb-1">Team</p>
               <p className="text-rg-sm-normal">
-                <span className="text-rg-sm-medium">Designers: </span> Tra
-                Nguyen (me!), Kayla Le
+                <span className="text-rg-sm-medium">Designers: </span> Tra Nguyen (me!), Kayla Le
               </p>
               <p className="text-rg-sm-normal">
-                <span className="text-rg-sm-medium">Developers: </span> Matthew
-                Li, Ryan Gertz, William Portugal Praneeth Kommineni
+                <span className="text-rg-sm-medium">Developers: </span> Matthew Li, Ryan Gertz,
+                William Portugal Praneeth Kommineni
               </p>
             </div>
             <div>
               <p className="text-h6 text-darkgray mb-1">Duration</p>
-              <p className="text-rg-sm-normal">
-                Mar 2025 — June 2025 (3 months)
-              </p>
+              <p className="text-rg-sm-normal">Mar 2025 — June 2025 (3 months)</p>
             </div>
           </div>
         </TwoColumnSection>
@@ -92,16 +89,14 @@ export default function Sli() {
           <TwoColumnSection title="Overview">
             <div className="flex flex-col gap-[1.5rem]">
               <p className="text-rg-sm-normal text-black">
-                The Sustainable Land Initiative (SLI) supports farmers in
-                adopting climate-smart practices. As part of a broader website
-                update, I led the redesign of the Farmshare platform—a new tool
-                that enables farmers to rent agricultural equipment directly
+                The Sustainable Land Initiative (SLI) supports farmers in adopting climate-smart
+                practices. As part of a broader website update, I led the redesign of the Farmshare
+                platform—a new tool that enables farmers to rent agricultural equipment directly
                 through the site.
               </p>
               <p className="text-rg-sm-normal text-black">
-                In addition to designing Farmshare, I created a reusable design
-                system, redesigned several outdated pages, and improved the
-                admin dashboard for internal management.
+                In addition to designing Farmshare, I created a reusable design system, redesigned
+                several outdated pages, and improved the admin dashboard for internal management.
               </p>
             </div>
           </TwoColumnSection>
@@ -132,9 +127,8 @@ export default function Sli() {
           <TwoColumnSection title="Design System">
             <div className="flex flex-col gap-[1.5rem] text-rg-sm-normal text-black">
               <p>
-                To address inconsistency across the site and support future
-                scalability, I created a centralized design system library that
-                includes:
+                To address inconsistency across the site and support future scalability, I created a
+                centralized design system library that includes:
               </p>
               <div className="flex flex-col gap-[1rem]">
                 <p>Typography, color, spacing, and corner radius styles</p>
@@ -181,10 +175,7 @@ export default function Sli() {
                   />
                 </div>
               </div>
-              <p>
-                This system now serves as the foundation for current and
-                upcoming web projects.
-              </p>
+              <p>This system now serves as the foundation for current and upcoming web projects.</p>
             </div>
           </TwoColumnSection>
         </div>
@@ -195,12 +186,11 @@ export default function Sli() {
             <div className="flex flex-col gap-[1.5rem] text-rg-sm-normal text-black">
               <div className="flex flex-col gap-[1rem]">
                 <p>
-                  The existing admin pages were visually inconsistent and
-                  difficult to use. For example, the Reservation List used large
-                  individual cards to display data, while other pages (like User
-                  and Equipment lists) used tables. This made it harder to scan,
-                  compare, and manage information—especially when dealing with
-                  large volumes of data.
+                  The existing admin pages were visually inconsistent and difficult to use. For
+                  example, the Reservation List used large individual cards to display data, while
+                  other pages (like User and Equipment lists) used tables. This made it harder to
+                  scan, compare, and manage information—especially when dealing with large volumes
+                  of data.
                 </p>
                 <div className="flex flew-row gap-[0.75rem]">
                   <ImageLightbox
@@ -222,8 +212,8 @@ export default function Sli() {
               </div>
               <div className="flex flex-col gap-[1rem]">
                 <p>
-                  To improve usability and consistency, I redesigned all admin
-                  tools to use a unified table format with:
+                  To improve usability and consistency, I redesigned all admin tools to use a
+                  unified table format with:
                 </p>
                 <div className="px-4 py-3 rounded-[0.75rem] bg-gray30">
                   Clear, scannable rows for quick overviews
@@ -252,9 +242,8 @@ export default function Sli() {
                   />
                 </div>
                 <p>
-                  This change brought visual and functional consistency to the
-                  admin experience, making it easier for internal users to
-                  manage equipment, users, and reservations.
+                  This change brought visual and functional consistency to the admin experience,
+                  making it easier for internal users to manage equipment, users, and reservations.
                 </p>
               </div>
             </div>
@@ -268,17 +257,16 @@ export default function Sli() {
               <div className="flex flex-col gap-[1rem]">
                 <h3 className="text-h6">Challenge</h3>
                 <p>
-                  Build a seamless rental experience within a constrained site
-                  architecture that couldn't be changed.
+                  Build a seamless rental experience within a constrained site architecture that
+                  couldn't be changed.
                 </p>
               </div>
               <div className="flex flex-col gap-[1rem]">
                 <h3 className="text-h6">Solution</h3>
                 <p>
-                  I introduced a secondary navigation bar within the FarmShare
-                  page to help users navigate categories of equipment,
-                  availability, and reservations—all contained within a single
-                  page. Key UX features included:
+                  I introduced a secondary navigation bar within the FarmShare page to help users
+                  navigate categories of equipment, availability, and reservations—all contained
+                  within a single page. Key UX features included:
                 </p>
                 <div className="px-4 py-3 rounded-[0.75rem] bg-gray30">
                   Clear categorization of rentable equipment
@@ -298,14 +286,13 @@ export default function Sli() {
               <div className="flex flex-col gap-[1rem]">
                 <h3 className="text-h6">Testing + Iteration</h3>
                 <p>
-                  I conducted user interviews with farmers and stakeholders to
-                  test functionality and usability. Using affinity mapping, I
-                  grouped feedback into themes, surfaced pain points, and
-                  iterated solutions. Insights led to:
+                  I conducted user interviews with farmers and stakeholders to test functionality
+                  and usability. Using affinity mapping, I grouped feedback into themes, surfaced
+                  pain points, and iterated solutions. Insights led to:
                 </p>
                 <div className="px-4 py-3 rounded-[0.75rem] bg-gray30">
-                  Revised contents of the checkout page to include more
-                  information about the equipment and reservation policies
+                  Revised contents of the checkout page to include more information about the
+                  equipment and reservation policies
                 </div>
                 <div className="px-4 py-3 rounded-[0.75rem] bg-gray30">
                   Streamlined table layouts
@@ -324,10 +311,9 @@ export default function Sli() {
                   className="w-full object-cover rounded-[0.75rem]"
                 />
                 <p>
-                  During usability interviews, several users expressed interest
-                  in a rating and review system to help assess equipment
-                  condition and reliability. I explored how this feature could
-                  fit into the reservation flow and presented an early concept.
+                  During usability interviews, several users expressed interest in a rating and
+                  review system to help assess equipment condition and reliability. I explored how
+                  this feature could fit into the reservation flow and presented an early concept.
                 </p>
                 <ImageLightbox
                   src={Reviews}
@@ -335,10 +321,9 @@ export default function Sli() {
                   className="w-full object-cover rounded-[0.75rem]"
                 />
                 <p>
-                  After discussing with the product owner, we ultimately decided
-                  to defer this feature due to scope limitations and unclear
-                  value at this stage. This experience reinforced the importance
-                  of balancing user needs with technical and strategic
+                  After discussing with the product owner, we ultimately decided to defer this
+                  feature due to scope limitations and unclear value at this stage. This experience
+                  reinforced the importance of balancing user needs with technical and strategic
                   constraints.
                 </p>
               </div>
@@ -364,8 +349,8 @@ export default function Sli() {
                 Improved admin experience for internal staff
               </div>
               <p>
-                While some features are still in development, designs are fully
-                documented and handed off to the engineering team.
+                While some features are still in development, designs are fully documented and
+                handed off to the engineering team.
               </p>
             </div>
           </TwoColumnSection>
@@ -377,33 +362,31 @@ export default function Sli() {
             <div className="flex flex-col gap-[1rem] text-rg-sm-normal text-black">
               <p>What I learned:</p>
               <div className="px-4 py-3 rounded-[0.75rem] bg-gray30">
-                Creating a design system from scratch taught me how powerful
-                centralized styles and components can be. It not only improved
-                visual consistency but also helped our team move faster and laid
-                a solid foundation for future SLI products.
+                Creating a design system from scratch taught me how powerful centralized styles and
+                components can be. It not only improved visual consistency but also helped our team
+                move faster and laid a solid foundation for future SLI products.
               </div>
               <div className="px-4 py-3 rounded-[0.75rem] bg-gray30">
-                I conducted user interviews for every feature to test and
-                iterate on my designs. When users requested a rating system for
-                FarmShare, I explored the idea—but after reviewing with the
-                product owner, we decided to defer it due to scope and
-                priorities. This reinforced that good UX balances user needs
-                with technical and business constraints.
+                I conducted user interviews for every feature to test and iterate on my designs.
+                When users requested a rating system for FarmShare, I explored the idea—but after
+                reviewing with the product owner, we decided to defer it due to scope and
+                priorities. This reinforced that good UX balances user needs with technical and
+                business constraints.
               </div>
               <div className="px-4 py-3 rounded-[0.75rem] bg-gray30">
-                The fixed information architecture was limiting, but it pushed
-                me to find a workaround using a secondary navigation bar—a
-                solution that turned out to be both effective and intuitive.
+                The fixed information architecture was limiting, but it pushed me to find a
+                workaround using a secondary navigation bar—a solution that turned out to be both
+                effective and intuitive.
               </div>
               <div className="px-4 py-3 rounded-[0.75rem] bg-gray30">
-                Redesigning the admin dashboard showed me how layout and
-                consistency directly impact usability. Switching from cards to
-                tables made managing data far more efficient for the team.
+                Redesigning the admin dashboard showed me how layout and consistency directly impact
+                usability. Switching from cards to tables made managing data far more efficient for
+                the team.
               </div>
               <div className="px-4 py-3 rounded-[0.75rem] bg-gray30">
-                Working in Agile sprints kept the design and dev team aligned.
-                It allowed me to test features with users, make rapid changes,
-                and hand off components efficiently with continuous feedback.
+                Working in Agile sprints kept the design and dev team aligned. It allowed me to test
+                features with users, make rapid changes, and hand off components efficiently with
+                continuous feedback.
               </div>
             </div>
           </TwoColumnSection>
@@ -419,9 +402,9 @@ export default function Sli() {
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-2 px-4 py-2 border-2 cursor-pointer w-fit transition-all duration-300 ease-in-out hover:scale-[1.015]"
                 style={{
-                  borderRadius: "2rem",
-                  border: "2px solid var(--text-mediumgray)",
-                  background: "var(--bg-gray30)",
+                  borderRadius: '2rem',
+                  border: '2px solid var(--text-mediumgray)',
+                  background: 'var(--bg-gray30)',
                 }}
               >
                 <span className="text-darkgray transition-opacity duration-200 group-hover:opacity-80">
@@ -437,9 +420,9 @@ export default function Sli() {
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-2 px-4 py-2 border-2 cursor-pointer w-fit transition-all duration-300 ease-in-out hover:scale-[1.015]"
                 style={{
-                  borderRadius: "2rem",
-                  border: "2px solid var(--text-mediumgray)",
-                  background: "var(--bg-gray30)",
+                  borderRadius: '2rem',
+                  border: '2px solid var(--text-mediumgray)',
+                  background: 'var(--bg-gray30)',
                 }}
               >
                 <span className="text-darkgray transition-opacity duration-200 group-hover:opacity-80">
@@ -455,9 +438,9 @@ export default function Sli() {
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-2 px-4 py-2 border-2 cursor-pointer w-fit transition-all duration-300 ease-in-out hover:scale-[1.015]"
                 style={{
-                  borderRadius: "2rem",
-                  border: "2px solid var(--text-mediumgray)",
-                  background: "var(--bg-gray30)",
+                  borderRadius: '2rem',
+                  border: '2px solid var(--text-mediumgray)',
+                  background: 'var(--bg-gray30)',
                 }}
               >
                 <span className="text-darkgray transition-opacity duration-200 group-hover:opacity-80">

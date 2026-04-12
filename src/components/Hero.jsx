@@ -1,7 +1,7 @@
-import linkedin from "../assets/linkedin.svg";
-import behance from "../assets/behance.svg";
-import email from "../assets/email.svg";
-import PortraitWithBlobs from "./PortraitWithBlobs";
+import linkedin from '../assets/linkedin.svg';
+import behance from '../assets/behance.svg';
+import email from '../assets/email.svg';
+import PortraitWithBlobs from './PortraitWithBlobs';
 
 export default function Hero() {
   return (
@@ -40,8 +40,7 @@ export default function Hero() {
           <div className="flex flex-col items-start gap-6 w-full max-w-[25.1875rem] min-w-[12rem] text-left">
             <h1 className="heading-h4 text-black">Tra Nguyen</h1>
             <p className="text-lg-normal text-darkgray">
-              A multidisciplinary designer studying UI/UX Design + Computer
-              Science @ CalPoly SLO.
+              A multidisciplinary designer studying UI/UX Design + Computer Science @ CalPoly SLO.
             </p>
             <div className="flex gap-4 items-center">
               <a

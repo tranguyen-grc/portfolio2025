@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import { X } from "lucide-react";
+import { useState, useEffect } from 'react';
+import { X } from 'lucide-react';
 
 export default function ImageLightbox({ src, alt, caption, className }) {
   const [open, setOpen] = useState(false);
@@ -7,10 +7,10 @@ export default function ImageLightbox({ src, alt, caption, className }) {
   // ESC to close
   useEffect(() => {
     const handleKey = (e) => {
-      if (e.key === "Escape") setOpen(false);
+      if (e.key === 'Escape') setOpen(false);
     };
-    if (open) document.addEventListener("keydown", handleKey);
-    return () => document.removeEventListener("keydown", handleKey);
+    if (open) document.addEventListener('keydown', handleKey);
+    return () => document.removeEventListener('keydown', handleKey);
   }, [open]);
 
   return (
@@ -48,9 +48,7 @@ export default function ImageLightbox({ src, alt, caption, className }) {
             />
 
             {caption && (
-              <p className="mt-4 text-white text-sm text-center max-w-[80vw]">
-                {caption}
-              </p>
+              <p className="mt-4 text-white text-sm text-center max-w-[80vw]">{caption}</p>
             )}
           </div>
         </div>

@@ -1,6 +1,6 @@
-import linkedin from "../assets/linkedin.svg";
-import behance from "../assets/behance.svg";
-import email from "../assets/email.svg";
+import linkedin from '../assets/linkedin.svg';
+import behance from '../assets/behance.svg';
+import email from '../assets/email.svg';
 
 export default function Footer() {
   return (
@@ -15,22 +15,10 @@ export default function Footer() {
 
       {/* Icons */}
       <div className="flex gap-10 items-center">
-        <a
-          href="https://www.linkedin.com/in/nguyen-tra/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src={linkedin}
-            alt="LinkedIn"
-            className="h-6 w-7 cursor-pointer"
-          />
+        <a href="https://www.linkedin.com/in/nguyen-tra/" target="_blank" rel="noopener noreferrer">
+          <img src={linkedin} alt="LinkedIn" className="h-6 w-7 cursor-pointer" />
         </a>
-        <a
-          href="https://www.behance.net/tranguyen58"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://www.behance.net/tranguyen58" target="_blank" rel="noopener noreferrer">
           <img src={behance} alt="Behance" className="h-7 w-7 cursor-pointer" />
         </a>
         <a href="mailto:chiptra292@gmail.com">
