@@ -1,6 +1,6 @@
 import { ArrowUpRight } from 'lucide-react';
 
-export default function GalleryImageCard({ src, title, tags = [], href }) {
+export default function GalleryImageCard({ src, title, tags = [], href, priority = false }) {
   return (
     <a
       href={href}
@@ -8,17 +8,14 @@ export default function GalleryImageCard({ src, title, tags = [], href }) {
       rel="noopener noreferrer"
       className="mb-3 break-inside-avoid block w-full cursor-pointer group"
     >
-      <div
-        className="relative w-full rounded-[0.75rem] overflow-hidden"
-        style={{ minHeight: '180px', willChange: 'transform, opacity' }}
-      >
+      <div className="relative w-full rounded-[0.75rem] overflow-hidden" style={{ minHeight: '180px' }}>
         <img
           src={src}
           alt={title}
-          loading="lazy"
+          loading={priority ? 'eager' : 'lazy'}
+          fetchPriority={priority ? 'high' : 'auto'}
           decoding="async"
           className="w-full h-auto object-contain rounded-[0.75rem] transition-transform duration-300 group-hover:scale-[1.01]"
-          style={{ willChange: 'transform, opacity', transform: 'translateZ(0)' }}
         />
 
         {/* Top-right arrow */}

@@ -92,6 +92,8 @@ const galleryItems = [
   },
 ];
 
+const PRIORITY_IMAGE_COUNT = 4;
+
 export default function Fun() {
   useEffect(() => {
     document.title = 'Tra Nguyen | Fun';
@@ -109,9 +111,8 @@ export default function Fun() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.45, delay: i * 0.03 }}
-            style={{ willChange: 'transform, opacity' }}
           >
-            <GalleryImageCard {...item} />
+            <GalleryImageCard {...item} priority={i < PRIORITY_IMAGE_COUNT} />
           </motion.div>
         ))}
       </div>
@@ -124,7 +125,6 @@ export default function Fun() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.45, delay: 0.5 }}
-        style={{ willChange: 'transform, opacity' }}
       >
         <Footer />
       </motion.div>
