@@ -20,6 +20,11 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ToTopButton from '../components/ToTopButton';
 
+const timelineRowClass =
+  'flex flex-col gap-y-2 md:grid md:grid-cols-[12rem_minmax(0,1fr)] md:gap-x-16 lg:gap-x-20 items-start';
+const timelineDateClass = 'text-grad text-darkgray md:col-start-1 md:row-start-1';
+const timelineContentClass = 'min-w-0 md:col-start-2 md:row-start-1';
+
 export default function About() {
   useEffect(() => {
     document.title = 'Tra Nguyen | About';
@@ -102,23 +107,23 @@ export default function About() {
           <h2 className="text-h4 mb-8 text-black">Education</h2>
           <div className="flex flex-col gap-10">
             {/* University */}
-            <div className="flex flex-col md:flex-row md:gap-[10rem] items-start">
+            <div className={timelineRowClass}>
               {/* Details first on mobile */}
-              <div className="order-1 md:order-2 flex-1">
+              <div className={`order-1 md:order-none ${timelineContentClass}`}>
                 <p className="text-rg-sm-medium text-black">University of Washington</p>
                 <p className="text-rg-sm-normal text-darkgray">
                   Masters in Human Computer Interaction and Design
                 </p>
               </div>
               {/* Date second on mobile */}
-              <div className="order-2 md:order-1 min-w-[8rem] text-grad text-darkgray">
+              <div className={`order-2 md:order-none ${timelineDateClass}`}>
                 <p>Expected Graduation</p>
                 <p>Aug 2027</p>
               </div>
             </div>
-            <div className="flex flex-col md:flex-row md:gap-[10rem] items-start">
+            <div className={timelineRowClass}>
               {/* Details first on mobile */}
-              <div className="order-1 md:order-2 flex-1">
+              <div className={`order-1 md:order-none ${timelineContentClass}`}>
                 <p className="text-rg-sm-medium text-black">
                   California Polytechnic State University, San Luis Obispo
                 </p>
@@ -129,7 +134,7 @@ export default function About() {
                 </p>
               </div>
               {/* Date second on mobile */}
-              <div className="order-2 md:order-1 min-w-[8rem] text-grad text-darkgray">
+              <div className={`order-2 md:order-none ${timelineDateClass}`}>
                 <p>Sep 2023 — Jun 2026</p>
               </div>
             </div>
@@ -143,12 +148,12 @@ export default function About() {
           <h2 className="text-h4 mb-8 text-black">Experience</h2>
           <div className="flex flex-col gap-10">
             {/* ASPEN internship */}
-            <div className="flex flex-col md:flex-row md:gap-[10rem] items-start">
+            <div className={timelineRowClass}>
               {/* Dates */}
-              <div className="min-w-[8rem] text-grad text-darkgray text-sm-medium">
+              <div className={`${timelineDateClass} text-sm-medium`}>
                 <p>Jan 2025 — Present</p>
               </div>
-              <div>
+              <div className={timelineContentClass}>
                 <p className="text-rg-sm-medium text-black">
                   Graphic Design Intern{' '}
                   <span className="text-rg-sm-italic">
@@ -174,12 +179,12 @@ export default function About() {
             </div>
 
             {/* iter8 */}
-            <div className="flex flex-col md:flex-row md:gap-[10rem] items-start">
+            <div className={timelineRowClass}>
               {/* Dates */}
-              <div className="min-w-[8rem] text-grad text-darkgray text-sm-medium">
+              <div className={`${timelineDateClass} text-sm-medium`}>
                 <p>Jan 2026 — Present</p>
               </div>
-              <div>
+              <div className={timelineContentClass}>
                 <p className="text-rg-sm-medium text-black">
                   UI/UX Designer <span className="text-rg-sm-italic">@ CalPoly Iter8</span>
                 </p>
@@ -193,12 +198,12 @@ export default function About() {
             </div>
 
             {/* Stanford */}
-            <div className="flex flex-col md:flex-row md:gap-[10rem] items-start">
+            <div className={timelineRowClass}>
               {/* Dates */}
-              <div className="min-w-[8rem] text-grad text-darkgray text-sm-medium">
+              <div className={`${timelineDateClass} text-sm-medium`}>
                 <p>June 2024 — June 2025</p>
               </div>
-              <div>
+              <div className={timelineContentClass}>
                 <p className="text-rg-sm-medium text-black">
                   Graphic Design Intern{' '}
                   <span className="text-rg-sm-italic">
@@ -223,12 +228,12 @@ export default function About() {
             </div>
 
             {/* H4I */}
-            <div className="flex flex-col md:flex-row md:gap-[10rem] items-start">
+            <div className={timelineRowClass}>
               {/* Dates */}
-              <div className="min-w-[8rem] text-grad text-darkgray text-sm-medium">
+              <div className={`${timelineDateClass} text-sm-medium`}>
                 <p>Oct 2024 — June 2025</p>
               </div>
-              <div>
+              <div className={timelineContentClass}>
                 <p className="text-rg-sm-medium text-black">
                   UI/UX Designer <span className="text-rg-sm-italic">@ Hack4Impact</span>
                 </p>
@@ -244,12 +249,12 @@ export default function About() {
             </div>
 
             {/* iter8 */}
-            <div className="flex flex-col md:flex-row md:gap-[10rem] items-start">
+            <div className={timelineRowClass}>
               {/* Dates */}
-              <div className="min-w-[8rem] text-grad text-darkgray text-sm-medium">
+              <div className={`${timelineDateClass} text-sm-medium`}>
                 <p>Oct 2024 — Present</p>
               </div>
-              <div>
+              <div className={timelineContentClass}>
                 <p className="text-rg-sm-medium text-black">
                   UI/UX Designer <span className="text-rg-sm-italic">@ CalPoly Iter8</span>
                 </p>
@@ -271,12 +276,12 @@ export default function About() {
             </div>
 
             {/* ASPEN */}
-            <div className="flex flex-col md:flex-row md:gap-[10rem] items-start">
+            <div className={timelineRowClass}>
               {/* Dates */}
-              <div className="min-w-[8rem] text-grad text-darkgray text-sm-medium">
+              <div className={`${timelineDateClass} text-sm-medium`}>
                 <p>Aug 2024 — Dec 2024</p>
               </div>
-              <div>
+              <div className={timelineContentClass}>
                 <p className="text-rg-sm-medium text-black">
                   Web Project Coordinator{' '}
                   <span className="text-rg-sm-italic">
