@@ -8,7 +8,7 @@ import BespokeApp from './pages/BespokeApp';
 // import Sli from './pages/Sli';
 import Cchtf from './pages/Cchtf';
 import ScrollToTop from './components/ScrollToTop';
-import Bespoke from './pages/Bespoke2026';
+import Bespoke from './pages/BespokeApp';
 import Sli from './pages/Sli2026';
 // import Cchtf from './pages/Cchtf2026';
 

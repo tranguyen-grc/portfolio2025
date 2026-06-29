@@ -12,7 +12,7 @@
 
   /* Backgrounds if needed */
   --bg-black: #232323;
-  --bg-white: #efefef;
+  --bg-white: #fbfafa;
   --bg-lightgray: #ececec;
   --bg-gray30: rgba(209, 210, 204, 0.4);
   --bg-sli: #dae9d4;
@@ -53,6 +53,14 @@ body {
 
 .bg-sli {
   background-color: var(--bg-sli);
+}
+
+.border-darkgray {
+  border-color: var(--text-darkgray);
+}
+
+.border-mediumgray {
+  border-color: var(--text-mediumgray);
 }
 
 @layer components {

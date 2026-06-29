@@ -130,7 +130,9 @@ export default function About() {
                 <p className="text-rg-sm-normal text-darkgray">
                   B.S. in Liberal Arts and Engineering Studies: Computer Science & UI/UX
                   <br />
-                  GPA: 3.8
+                  Minor in Computer Science
+                  <br />
+                  Awarded Academic Excellence and Summa Cum Laude
                 </p>
               </div>
               {/* Date second on mobile */}
