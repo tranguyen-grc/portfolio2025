@@ -90,7 +90,7 @@ export default function BespokeApp() {
 
               <div>
                 <dt className="mb-3 text-h6 text-bespoke">Duration</dt>
-                <dd className="text-rg-sm-normal text-black">Jan 2025 - May 2025</dd>
+                <dd className="text-rg-sm-normal text-black">Jan 2025 - March 2025</dd>
               </div>
             </dl>
           </header>
@@ -182,19 +182,17 @@ export default function BespokeApp() {
                   communication needs:
                 </p>
 
-                <div className="col-span-2 flex min-h-[13.5rem] items-center rounded-[1.5rem] bg-[#E1F3F4] p-8 md:p-10">
-                  <p className="text-lg-rg-normal">
+                <ul className="col-span-2 grid grid-cols-2 gap-2 md:col-span-4 md:grid-cols-4">
+                  <li className="col-span-2 flex min-h-[13.5rem] items-center rounded-[1.5rem] bg-[#E1F3F4] p-8 text-lg-rg-normal md:p-10">
                     Team discussions needed to stay connected to specific properties and maintenance
                     tasks.
-                  </p>
-                </div>
+                  </li>
 
-                <div className="col-span-2 flex min-h-[13.5rem] items-center rounded-[1.5rem] bg-[#F2EEDE] p-8 md:p-10">
-                  <p className="text-lg-rg-normal">
+                  <li className="col-span-2 flex min-h-[13.5rem] items-center rounded-[1.5rem] bg-[#F2EEDE] p-8 text-lg-rg-normal md:p-10">
                     Employees also needed private conversations for quick check-ins that weren't
                     tied to ongoing projects.
-                  </p>
-                </div>
+                  </li>
+                </ul>
 
                 <p className="order-5 col-span-2 md:order-none md:self-center">
                   We complemented these findings with competitive analysis of collaboration tools
@@ -281,7 +279,7 @@ export default function BespokeApp() {
                 insights that informed design improvements for the high-fidelity prototype.
               </p>
 
-              <div className="flex w-full flex-col gap-8 md:flex-row">
+              <figure className="flex w-full flex-col gap-8 md:flex-row">
                 <img
                   src={Testing1}
                   alt="Testing insights part 1"
@@ -296,9 +294,12 @@ export default function BespokeApp() {
                   loading="lazy"
                   decoding="async"
                 />
-              </div>
+                <figcaption className="sr-only">
+                  Usability testing insight boards that informed messaging system iterations.
+                </figcaption>
+              </figure>
 
-              <ol className="flex flex-col gap-[0.75rem]">
+              <ol className="flex flex-col gap-[0.75rem] text-rg-sm-normal text-black">
                 <li className="flex flex-col gap-[0.75rem] border-t border-mediumgray py-6">
                   <h3 className="text-lg-rg-normal">
                     Users expected properties to be the starting point.
@@ -307,15 +308,11 @@ export default function BespokeApp() {
                     Participants found it confusing to land directly in the most recent conversation
                     and wanted to choose a property before entering its messages.
                   </p>
-                  <div className="flex mt-4 flex-col md:flex-row items-start gap-2 text-darkgray">
-                    <div className="shrink-0 rounded-full border border-mediumgray px-4 py-1 text-sm uppercase leading-none shadow-sm">
-                      Iteration
-                    </div>
-                    <p>
-                      Introduced a dedicated Properties page as the entry point, allowing users to
-                      select a property before entering its messaging workspace.
-                    </p>
-                  </div>
+                  <p className="text-darkgray">
+                    Replaced the back button with a hamburger menu that exposes all property
+                    workspaces, reinforcing the idea that users are navigating between properties
+                    rather than pages.
+                  </p>
                 </li>
 
                 <li className="flex flex-col gap-[0.75rem] border-t border-mediumgray py-6">
@@ -326,16 +323,11 @@ export default function BespokeApp() {
                     The original back button suggested returning to the previous screen rather than
                     switching between properties.
                   </p>
-                  <div className="flex mt-4 flex-col md:flex-row items-start gap-2 text-darkgray">
-                    <div className="shrink-0 rounded-full border border-mediumgray px-4 py-1 text-sm uppercase leading-none shadow-sm">
-                      Iteration
-                    </div>
-                    <p>
-                      Replaced the back button with a hamburger menu that exposes all property
-                      workspaces, reinforcing the idea that users are navigating between properties
-                      rather than pages.
-                    </p>
-                  </div>
+                  <p className="text-darkgray">
+                    Improved the visual hierarchy by exposing property groups more clearly,
+                    increasing spacing between channels, and preserving the familiar Property to
+                    Channels structure inspired by Slack.
+                  </p>
                 </li>
 
                 <li className="flex flex-col gap-[0.75rem] border-t border-mediumgray py-6">
@@ -346,16 +338,10 @@ export default function BespokeApp() {
                     Some participants had difficulty distinguishing property workspaces from
                     individual message channels.
                   </p>
-                  <div className="flex mt-4 flex-col md:flex-row items-start gap-2 text-darkgray">
-                    <div className="shrink-0 rounded-full border border-mediumgray px-4 py-1 text-sm uppercase leading-none shadow-sm">
-                      Iteration
-                    </div>
-                    <p>
-                      Improved the visual hierarchy by exposing property groups more clearly,
-                      increasing spacing between channels, and preserving the familiar Property to
-                      Channels structure inspired by Slack.
-                    </p>
-                  </div>
+                  <p className="text-darkgray">
+                    Introduced a dedicated Properties page as the entry point, allowing users to
+                    select a property before entering its messaging workspace.
+                  </p>
                 </li>
 
                 <li className="flex flex-col gap-[0.75rem] border-t border-mediumgray py-6">

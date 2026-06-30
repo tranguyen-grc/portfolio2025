@@ -9,6 +9,7 @@
   --text-white: #efefef;
   --text-bespoke: #058993;
   --text-sli: #307b12;
+  --text-gemlato: #c0379d;
 
   /* Backgrounds if needed */
   --bg-black: #232323;
@@ -38,6 +39,14 @@ body {
 
 .text-sli {
   color: var(--text-sli);
+}
+
+.text-gemlato {
+  color: var(--text-gemlato);
+}
+
+.bg-gemlato {
+  color: var(--text-gemlato);
 }
 
 .bg-white {

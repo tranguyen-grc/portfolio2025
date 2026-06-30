@@ -39,7 +39,7 @@ export default function About() {
     });
   }, []);
   return (
-    <main className="px-6 sm:px-10 lg:px-[12.625rem]">
+    <main className="mx-auto max-w-[100rem] px-6 sm:px-10 lg:px-[8rem]">
       <Navbar />
 
       <section
