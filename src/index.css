@@ -10,6 +10,7 @@
   --text-bespoke: #058993;
   --text-sli: #307b12;
   --text-gemlato: #c0379d;
+  --text-cnt: #722121;
 
   /* Backgrounds if needed */
   --bg-black: #232323;
@@ -43,6 +44,10 @@ body {
 
 .text-gemlato {
   color: var(--text-gemlato);
+}
+
+.text-cnt {
+  color: var(--text-cnt);
 }
 
 .bg-gemlato {

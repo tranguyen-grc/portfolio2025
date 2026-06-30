@@ -29,7 +29,7 @@ export default function Footer() {
       {/* Footer note */}
       <div className="text-rg-sm-normal text-black">
         <p>Designed and developed by Tra Nguyen.</p>
-        <p className="mt-1 text-tiny-normal">© Tra Nguyen 2025</p>
+        <p className="mt-1 text-tiny-normal">© Tra Nguyen 2026</p>
       </div>
     </footer>
   );

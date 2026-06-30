@@ -6,6 +6,7 @@ import NotFound from './pages/NotFound';
 import ScrollToTop from './components/ScrollToTop';
 import Bespoke from './pages/BespokeApp';
 import Gemlato from './pages/Gemlato';
+import CNT from './pages/CNT';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/bespoke" element={<Bespoke />} />
         <Route path="/gemlato" element={<Gemlato />} />
+        <Route path="/cnt" element={<CNT />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

@@ -3,6 +3,7 @@ import Hero from '../components/Hero';
 import ProjectCard from '../components/ProjectCard';
 import bespokeProjectImg from '../assets/bespoke.jpg';
 import gemlatoProjectImg from '../assets/gemlato/gemlatoBanner.jpg';
+import cntProjectImg from '../assets/cnt/CNTBanner.png';
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
 import { motion as Motion } from 'framer-motion';
@@ -29,7 +30,7 @@ export default function Work() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
         >
           <Link to="/gemlato">
             <ProjectCard
@@ -43,13 +44,27 @@ export default function Work() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.6, delay: 0.1 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
         >
           <Link to="/bespoke">
             <ProjectCard
               title='Designing "Slack" for Property Management'
               description="Creating structured collaboration for luxury property management."
               image={bespokeProjectImg}
+            />
+          </Link>
+        </Motion.div>
+        <Motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
+          <Link to="/cnt">
+            <ProjectCard
+              title="Rethinking the Digital Biography"
+              description="Iterating with AI to design a more human way of representing people."
+              image={cntProjectImg}
             />
           </Link>
         </Motion.div>
