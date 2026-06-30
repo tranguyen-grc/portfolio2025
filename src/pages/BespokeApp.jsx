@@ -308,11 +308,16 @@ export default function BespokeApp() {
                     Participants found it confusing to land directly in the most recent conversation
                     and wanted to choose a property before entering its messages.
                   </p>
-                  <p className="text-darkgray">
-                    Replaced the back button with a hamburger menu that exposes all property
-                    workspaces, reinforcing the idea that users are navigating between properties
-                    rather than pages.
-                  </p>
+                  <div className="flex mt-4 flex-col md:flex-row items-start gap-2 text-darkgray">
+                    <div className="shrink-0 rounded-full border border-mediumgray px-4 py-1 text-sm uppercase leading-none shadow-sm">
+                      Iteration
+                    </div>
+                    <p className="text-darkgray">
+                      Replaced the back button with a hamburger menu that exposes all property
+                      workspaces, reinforcing the idea that users are navigating between properties
+                      rather than pages.
+                    </p>
+                  </div>
                 </li>
 
                 <li className="flex flex-col gap-[0.75rem] border-t border-mediumgray py-6">
@@ -323,11 +328,16 @@ export default function BespokeApp() {
                     The original back button suggested returning to the previous screen rather than
                     switching between properties.
                   </p>
-                  <p className="text-darkgray">
-                    Improved the visual hierarchy by exposing property groups more clearly,
-                    increasing spacing between channels, and preserving the familiar Property to
-                    Channels structure inspired by Slack.
-                  </p>
+                  <div className="flex mt-4 flex-col md:flex-row items-start gap-2 text-darkgray">
+                    <div className="shrink-0 rounded-full border border-mediumgray px-4 py-1 text-sm uppercase leading-none shadow-sm">
+                      Iteration
+                    </div>
+                    <p className="text-darkgray">
+                      Improved the visual hierarchy by exposing property groups more clearly,
+                      increasing spacing between channels, and preserving the familiar Property to
+                      Channels structure inspired by Slack.
+                    </p>
+                  </div>
                 </li>
 
                 <li className="flex flex-col gap-[0.75rem] border-t border-mediumgray py-6">
@@ -338,10 +348,15 @@ export default function BespokeApp() {
                     Some participants had difficulty distinguishing property workspaces from
                     individual message channels.
                   </p>
-                  <p className="text-darkgray">
-                    Introduced a dedicated Properties page as the entry point, allowing users to
-                    select a property before entering its messaging workspace.
-                  </p>
+                  <div className="flex mt-4 flex-col md:flex-row items-start gap-2 text-darkgray">
+                    <div className="shrink-0 rounded-full border border-mediumgray px-4 py-1 text-sm uppercase leading-none shadow-sm">
+                      Iteration
+                    </div>
+                    <p className="text-darkgray">
+                      Introduced a dedicated Properties page as the entry point, allowing users to
+                      select a property before entering its messaging workspace.
+                    </p>
+                  </div>
                 </li>
 
                 <li className="flex flex-col gap-[0.75rem] border-t border-mediumgray py-6">
