@@ -25,6 +25,23 @@ const timelineRowClass =
 const timelineDateClass = 'text-grad text-darkgray md:col-start-1 md:row-start-1';
 const timelineContentClass = 'min-w-0 md:col-start-2 md:row-start-1';
 
+const fadeInReveal = {
+  'data-aos': 'fade-up',
+  'data-aos-duration': '700',
+  'data-aos-easing': 'ease-out-quart',
+};
+
+const heroTextReveal = {
+  ...fadeInReveal,
+  'data-aos-duration': '750',
+};
+
+const heroImageReveal = {
+  ...fadeInReveal,
+  'data-aos-duration': '850',
+  'data-aos-delay': '120',
+};
+
 export default function About() {
   useEffect(() => {
     document.title = 'Tra Nguyen | About';
@@ -32,10 +49,13 @@ export default function About() {
 
   useEffect(() => {
     AOS.init({
-      duration: 800,
-      easing: 'ease-out-cubic',
+      duration: 700,
+      easing: 'ease-out-quart',
       once: true,
-      offset: 100,
+      offset: 80,
+      delay: 0,
+      anchorPlacement: 'top-bottom',
+      disable: () => window.matchMedia('(prefers-reduced-motion: reduce)').matches,
     });
   }, []);
   return (
@@ -52,7 +72,7 @@ export default function About() {
         {/* Image Block with Gradient Overlay (comes first on mobile) */}
         <div
           className="order-1 md:order-2 w-full md:w-[25rem] flex-shrink-0 relative rounded-[2rem] overflow-hidden shadow-md"
-          data-aos="fade-left"
+          {...heroImageReveal}
         >
           <img
             src={Headshot}
@@ -69,7 +89,7 @@ export default function About() {
         </div>
 
         {/* Text Block (comes second on mobile, left on desktop) */}
-        <div className="order-2 md:order-1 w-full md:w-[45rem] text-left" data-aos="fade-right">
+        <div className="order-2 md:order-1 w-full md:w-[45rem] text-left" {...heroTextReveal}>
           <h1 className="text-h4 text-black mb-4">Hi, I'm Tra Nguyen.</h1>
           <p className="text-rg-sm-normal text-black mb-4">
             I first got into UI/UX design by obsessing over game menus as a kid, noticing how
@@ -102,7 +122,7 @@ export default function About() {
       </section>
 
       {/* Education Section */}
-      <div data-aos="fade-up" data-aos-delay="100">
+      <div {...fadeInReveal}>
         <section className="py-[5rem]">
           <h2 className="text-h4 mb-8 text-black">Education</h2>
           <div className="flex flex-col gap-10">
@@ -145,7 +165,7 @@ export default function About() {
       </div>
 
       {/* Experience Section */}
-      <div data-aos="fade-up" data-aos-delay="200">
+      <div {...fadeInReveal} data-aos-delay="100">
         <section className="py-[5rem]">
           <h2 className="text-h4 mb-8 text-black">Experience</h2>
           <div className="flex flex-col gap-10">
@@ -157,20 +177,27 @@ export default function About() {
               </div>
               <div className={timelineContentClass}>
                 <p className="text-rg-sm-medium text-black">
-                  Graphic Design Intern{' '}
+                  Visual Design Intern{' '}
                   <span className="text-rg-sm-italic">
                     @ Advanced Systems for Power Engineering, Inc.
                   </span>
                 </p>
                 <ul className="list-disc text-rg-sm-normal text-darkgray pl-5 mt-2 space-y-1">
                   <li>
-                    Design ads for T&D World (~50K readership) and IEEE PES (~30K members)
-                    magazines, showcasing ASPEN's flagship products (OneLiner, PowerFlow)
+                    <li>
+                      Design and implement a tutorial hub for browsing, searching, and watching
+                      software training videos, improving access to product documentation and
+                      learning resources
+                    </li>
                   </li>
                   <li>
                     Conduct heuristic evaluation of the UX for an upcoming circuit breaker
                     diagramming software, identifying usability improvements and design
                     recommendations
+                  </li>
+                  <li>
+                    Design ads for T&D World (~50K readership) and IEEE PES (~30K members)
+                    magazines, showcasing ASPEN's flagship products (OneLiner, PowerFlow)
                   </li>
                   <li>
                     Create brand styling guidelines and design leaflets for international
@@ -311,7 +338,7 @@ export default function About() {
       </div>
 
       {/* Tools and skills */}
-      <div data-aos="fade-up" data-aos-delay="200">
+      <div {...fadeInReveal} data-aos-delay="100">
         <section className="py-[5rem]">
           <h2 className="text-h4 mb-8 text-black">Tools + Skills</h2>
           <div className="flex flex-col items-start gap-12">
@@ -382,7 +409,7 @@ export default function About() {
 
       <ToTopButton />
 
-      <div data-aos="fade-up" data-aos-delay="500">
+      <div {...fadeInReveal} data-aos-delay="150">
         <Footer />
       </div>
     </main>
