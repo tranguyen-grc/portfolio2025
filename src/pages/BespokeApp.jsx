@@ -304,15 +304,15 @@ export default function BespokeApp() {
                   <h3 className="text-lg-rg-normal">
                     Users expected properties to be the starting point.
                   </h3>
-                  <p>
+                  <p className="text-darkgray">
                     Participants found it confusing to land directly in the most recent conversation
                     and wanted to choose a property before entering its messages.
                   </p>
-                  <div className="flex mt-4 flex-col md:flex-row items-start gap-2 text-darkgray">
+                  <div className="flex mt-4 flex-col md:flex-row items-start gap-2 text-black">
                     <div className="shrink-0 rounded-full border border-mediumgray px-4 py-1 text-sm uppercase leading-none shadow-sm">
                       Iteration
                     </div>
-                    <p className="text-darkgray">
+                    <p>
                       Replaced the back button with a hamburger menu that exposes all property
                       workspaces, reinforcing the idea that users are navigating between properties
                       rather than pages.
@@ -324,15 +324,15 @@ export default function BespokeApp() {
                   <h3 className="text-lg-rg-normal">
                     Navigation between properties felt unintuitive.
                   </h3>
-                  <p>
+                  <p className="text-darkgray">
                     The original back button suggested returning to the previous screen rather than
                     switching between properties.
                   </p>
-                  <div className="flex mt-4 flex-col md:flex-row items-start gap-2 text-darkgray">
+                  <div className="flex mt-4 flex-col md:flex-row items-start gap-2 text-black">
                     <div className="shrink-0 rounded-full border border-mediumgray px-4 py-1 text-sm uppercase leading-none shadow-sm">
                       Iteration
                     </div>
-                    <p className="text-darkgray">
+                    <p>
                       Improved the visual hierarchy by exposing property groups more clearly,
                       increasing spacing between channels, and preserving the familiar Property to
                       Channels structure inspired by Slack.
@@ -344,15 +344,15 @@ export default function BespokeApp() {
                   <h3 className="text-lg-rg-normal">
                     The hierarchy between properties and conversations was unclear.
                   </h3>
-                  <p>
+                  <p className="text-darkgray">
                     Some participants had difficulty distinguishing property workspaces from
                     individual message channels.
                   </p>
-                  <div className="flex mt-4 flex-col md:flex-row items-start gap-2 text-darkgray">
+                  <div className="flex mt-4 flex-col md:flex-row items-start gap-2 text-black">
                     <div className="shrink-0 rounded-full border border-mediumgray px-4 py-1 text-sm uppercase leading-none shadow-sm">
                       Iteration
                     </div>
-                    <p className="text-darkgray">
+                    <p>
                       Introduced a dedicated Properties page as the entry point, allowing users to
                       select a property before entering its messaging workspace.
                     </p>
@@ -363,11 +363,11 @@ export default function BespokeApp() {
                   <h3 className="text-lg-rg-normal">
                     Messaging interactions didn't match user expectations.
                   </h3>
-                  <p>
+                  <p className="text-darkgray">
                     Participants expected their own messages to appear on the right, consistent with
                     common messaging applications.
                   </p>
-                  <div className="flex mt-4 flex-col md:flex-row items-start gap-2 text-darkgray">
+                  <div className="flex mt-4 flex-col md:flex-row items-start gap-2 text-black">
                     <div className="shrink-0 rounded-full border border-mediumgray px-4 py-1 text-sm uppercase leading-none shadow-sm">
                       Iteration
                     </div>

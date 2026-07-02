@@ -193,7 +193,7 @@ export default function CNT() {
               </h2>
               <div className="flex flex-col gap-[1.5rem] text-rg-sm-normal text-black">
                 <p>
-                  Chuyển Nhà Tôi is a family storytelling platform designed to help families
+                  Chuyện Nhà Tôi is a family storytelling platform designed to help families
                   preserve, explore, and make meaning from memories across generations.
                 </p>
                 <p>

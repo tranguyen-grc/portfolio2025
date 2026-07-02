@@ -138,20 +138,21 @@ const prototypeFixes = [
     caption: 'Renaming Shop to Order Online',
   },
   {
-    src: fix2,
-    alt: 'Standardized flavor and allergen tags',
-    caption:
-      'Standardizing flavor and allergen icons, then turning them into tags to minimize confusion',
+    src: fix4,
+    alt: 'Expanded disabled button state colors',
+    caption: 'Expanding our design system colors to better communicate disabled states',
   },
   {
     src: fix3,
     alt: 'Alphabetized flavor grid',
     caption: "Sorting the flavors alphabetically to match users' mental model",
   },
+
   {
-    src: fix4,
-    alt: 'Expanded disabled button state colors',
-    caption: 'Expanding our design system colors to better communicate disabled states',
+    src: fix2,
+    alt: 'Standardized flavor and allergen tags',
+    caption:
+      'Standardizing flavor and allergen icons, then turning them into tags to minimize confusion',
   },
 ];
 
