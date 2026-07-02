@@ -211,16 +211,30 @@ export default function About() {
             <div className={timelineRowClass}>
               {/* Dates */}
               <div className={`${timelineDateClass} text-sm-medium`}>
-                <p>Jan 2026 — Present</p>
+                <p>Jan 2026 — May 2026</p>
               </div>
               <div className={timelineContentClass}>
                 <p className="text-rg-sm-medium text-black">
-                  UI/UX Designer <span className="text-rg-sm-italic">@ CalPoly Iter8</span>
+                  Project Manager <span className="text-rg-sm-italic">@ CalPoly Iter8</span>
                 </p>
                 <ul className="list-disc text-rg-sm-normal text-darkgray pl-5 mt-2 space-y-1">
                   <li>
-                    Manage and guide a design team in creating a website for Gemlato through Cal
-                    Poly Iter8, leading user research and usability testing
+                    Led a team of 6 designers through the end-to-end UX process, coordinating
+                    research, ideation, design critiques, and stakeholder presentations for a local
+                    business client
+                  </li>
+                  <li>
+                    Applied UX research methods including interviews, persona creation, competitive
+                    analysis, and usability testing to uncover user needs and validate design
+                    decisions
+                  </li>
+                  <li>
+                    Architected site navigation, user flows, and high-fidelity prototypes that
+                    streamlined flavor discovery, online ordering, and dietary preference filtering
+                  </li>
+                  <li>
+                    Established consistent UI patterns and design standards across the product,
+                    improving usability, visual coherence, and development readiness
                   </li>
                 </ul>
               </div>
@@ -281,7 +295,7 @@ export default function About() {
             <div className={timelineRowClass}>
               {/* Dates */}
               <div className={`${timelineDateClass} text-sm-medium`}>
-                <p>Oct 2024 — Present</p>
+                <p>Oct 2024 — June 2025</p>
               </div>
               <div className={timelineContentClass}>
                 <p className="text-rg-sm-medium text-black">
