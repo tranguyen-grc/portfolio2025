@@ -93,16 +93,17 @@ export default function About() {
           <h1 className="text-h4 text-black mb-4">Hi, I'm Tra Nguyen.</h1>
           <p className="text-rg-sm-normal text-black mb-4">
             I first got into UI/UX design by obsessing over game menus as a kid, noticing how
-            interfaces could shape the whole experience. Now, I'm studying UI/UX Design and Computer
-            Science at Cal Poly San Luis Obispo, aiming to become a designer who understands both
+            interfaces could shape the whole experience. Now, I'm pursuing my Master's in Human -
+            Computer Interaction + Design at the University of Washington (building on my background
+            in UI/UX Design and Computer Science), aiming to become a designer who understands both
             creative and technical sides of product building.
           </p>
           <p className="text-rg-sm-normal text-black mb-6">
-            In my free time, I enjoy reading webcomics and manga, playing games, and drawing silly
-            caricatures of my friends.
+            In my free time, I enjoy reading webcomics and manga, playing games, and drawing fan art
+            of my favorite streamer!
           </p>
           <a
-            href="/TraNguyen_Resume_2026.pdf"
+            href="/TraNguyenResume.pdf"
             download
             className="group inline-flex items-center gap-2 px-4 py-2 border-2 cursor-pointer w-fit transition-all duration-300 ease-in-out hover:scale-[1.015]"
             style={{
@@ -185,22 +186,22 @@ export default function About() {
                 <ul className="list-disc text-rg-sm-normal text-darkgray pl-5 mt-2 space-y-1">
                   <li>
                     <li>
-                      Design and implement a tutorial hub for browsing, searching, and watching
+                      Designed and implemented a tutorial hub for browsing, searching, and watching
                       software training videos, improving access to product documentation and
                       learning resources
                     </li>
                   </li>
                   <li>
-                    Conduct heuristic evaluation of the UX for an upcoming circuit breaker
+                    Conducted heuristic evaluation of the UX for an upcoming circuit breaker
                     diagramming software, identifying usability improvements and design
                     recommendations
                   </li>
                   <li>
-                    Design ads for T&D World (~50K readership) and IEEE PES (~30K members)
+                    Designed ads for T&D World (~50K readership) and IEEE PES (~30K members)
                     magazines, showcasing ASPEN's flagship products (OneLiner, PowerFlow)
                   </li>
                   <li>
-                    Create brand styling guidelines and design leaflets for international
+                    Created brand styling guidelines and design leaflets for international
                     conferences, supporting global outreach (5K engineers)
                   </li>
                 </ul>

@@ -40,7 +40,8 @@ export default function Hero() {
           <div className="flex flex-col items-start gap-6 w-full max-w-[25.1875rem] min-w-[12rem] text-left">
             <h1 className="heading-h4 text-black">Tra Nguyen</h1>
             <p className="text-lg-normal text-darkgray">
-              A multidisciplinary designer studying UI/UX Design + Computer Science @ CalPoly.
+              A multidisciplinary designer pursuing an Master's in Human - Computer Interaction +
+              Design at the University of Washington.
             </p>
             <div className="flex gap-4 items-center">
               <a
